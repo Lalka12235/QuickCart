@@ -16,11 +16,29 @@ Session = sessionmaker(bind=engine)
 class Profile:
 
     @staticmethod
+    def select_user(username):
+        with Session() as session:
+            user = select(UserOrm).where(UserOrm.username == username)
+
+            if user:
+                return {'User': 'Exist'}
+            
+            return user
+            
+
+
+    @staticmethod
     def register_user(user: User):
         with Session() as session:
+            user = Profile.select_user(user.username)
+
+            if user:
+                return {'User': 'Exist'}
+
             result = session.execute(insert(UserOrm).values(user))
             session.commit()
             return result
+        
         
     @staticmethod
     def delete_account(username: str):
@@ -30,7 +48,7 @@ class Profile:
             return result
 
 
-class ManegeOrder:
+class ManageOrder:
 
     @staticmethod
     def select_order(username: str):

@@ -20,3 +20,8 @@ class UpdateProduct(Product):
 
 class UpdateOrder(Order):
     pass
+
+class ReviewsModel(BaseModel):
+    username: str
+    title: str
+    description: str
