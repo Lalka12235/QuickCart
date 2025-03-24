@@ -1,0 +1,22 @@
+from pydantic import BaseModel
+
+class User(BaseModel):
+    username: str
+    password: str
+
+class Order(BaseModel):
+    title:str
+    description:str
+    price:int
+    delivered: bool = False
+
+
+class Product(Order):
+    pass
+
+
+class UpdateProduct(Product):
+    pass
+
+class UpdateOrder(Order):
+    pass

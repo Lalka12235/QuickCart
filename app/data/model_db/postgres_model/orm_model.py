@@ -1,21 +1,22 @@
-from sqlalchemy.orm import Mapped,mapped_column,DeclarativeBase,relationship
+from sqlalchemy.orm import Mapped, mapped_column, DeclarativeBase, relationship
 from sqlalchemy import ForeignKey
 
 
 class Base(DeclarativeBase):
     pass
 
-#User model
-class UsersOrm(Base):
+
+class UserOrm(Base):  
     __tablename__ = 'users'
 
     id: Mapped[int] = mapped_column(primary_key=True)
     username: Mapped[str]
     password: Mapped[str]
 
-    products: Mapped[list['ProductOrm']]= relationship(back_populates='users')
+    # Один пользователь может иметь много заказов
+    orders: Mapped[list['OrderOrm']] = relationship(back_populates='user')
 
-#Product model
+
 class ProductOrm(Base):
     __tablename__ = 'products'
 
@@ -23,6 +24,24 @@ class ProductOrm(Base):
     title: Mapped[str]
     description: Mapped[str]
     price: Mapped[int]
-    user_id: Mapped[int] = mapped_column(ForeignKey('users.id'))
+    delivered: Mapped[bool]
 
-    users: Mapped[list['UsersOrm']] = relationship(back_populates='products')
+    # Один продукт может быть во многих заказах
+    orders: Mapped[list['OrderOrm']] = relationship(back_populates='product')
+
+
+class OrderOrm(Base):
+    __tablename__ = 'orders'
+
+    id: Mapped[int] = mapped_column(primary_key=True) 
+    title: Mapped[str]
+    description: Mapped[str]
+    price: Mapped[int]
+    delivered: Mapped[bool]
+    
+    user_id: Mapped[int] = mapped_column(ForeignKey('users.id'))
+    product_id: Mapped[int] = mapped_column(ForeignKey('products.id'))
+
+    # Каждый заказ принадлежит одному пользователю и одному продукту
+    user: Mapped['UserOrm'] = relationship(back_populates='orders') 
+    product: Mapped['ProductOrm'] = relationship(back_populates='orders') 
