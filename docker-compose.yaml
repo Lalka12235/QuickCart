@@ -1,0 +1,48 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres-for-api
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_USER=DB_USER
+      - POSTGRES_PASSWORD=DB_PASS
+      - POSTGRES_DB=DB_NAME
+    networks:
+      - netapi
+    volumes:
+      - postgre_vol
+    
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongo-for-api
+    networks:
+      - netapi
+    ports:
+      - "27017:27017"
+    environment:
+      - ME_CONFIG_MONGO_URL=mongodb://root:example@mongo:27017/
+    volumes:
+      - mongo_vol
+
+  backend:
+    build: .
+    container_name: shop-api
+    volumes:
+      - ./app:/app
+    networks:
+      - netapi
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+      - mongodb
+
+
+networks:
+  netapi:
+
+volumes:
+  postgre_vol:
+  mongo_vol:
