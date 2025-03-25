@@ -4,6 +4,7 @@ from app.handlers.order_router import order
 from app.handlers.product_router import product
 from app.handlers.user_router import user
 from app.handlers.reviews_router import review
+from app.auth.auth import auth
 
 app = FastAPI(
     title='Online stor',
@@ -29,3 +30,4 @@ app.include_router(user)
 app.include_router(product)
 app.include_router(order)
 app.include_router(review)
+app.include_router(auth)

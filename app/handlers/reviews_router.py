@@ -1,7 +1,8 @@
-from fastapi import APIRouter, HTTPException, status
-from app.db.postgres.orm_work import Profile,ManageOrder,ManageProduct
+from fastapi import APIRouter, HTTPException, status,Depends
+from app.db.postgres.orm_work import ManageProduct
 from app.db.mongoDB.mongo import ManageReview
-from app.data.model_pydantic.models import User,Order, Product, UpdateOrder, UpdateProduct, ReviewsModel
+from app.data.model_pydantic.models import ReviewsModel
+from app.auth.auth import get_current_user
 
 
 review = APIRouter(
@@ -9,13 +10,15 @@ review = APIRouter(
 )
 
 @review.get('/online-shop/review/get')
-async def get_review(title: str):
+async def get_review(title: str,current_user: str = Depends(get_current_user)):
     result = ManageReview.get_review(title)
 
     return {'Get': True, 'desc': result}
 
 @review.post('/online-shop/review/create')
-async def create_review(title:str,review: ReviewsModel):
+async def create_review(title:str,review: ReviewsModel,current_user: str = Depends(get_current_user)):
+    if review.username != current_user:
+        raise HTTPException(status_code=403, detail="")
     try:
         # Получаем продукт по названию
         product = ManageProduct.get_one_product(title)
@@ -36,13 +39,17 @@ async def create_review(title:str,review: ReviewsModel):
         )
 
 @review.patch('/online-shop/review/update')
-async def update_review(review: ReviewsModel):
+async def update_review(review: ReviewsModel, current_user: str = Depends(get_current_user)):
     result = ManageReview.update_review(review)
+    if review.username != current_user:
+        raise HTTPException(status_code=403, detail="")
 
     return {'Update': True,'desc': result}
 
 @review.delete('/online-shop/review/delete')
-async def delete_review(username: str,title: str):
+async def delete_review(username: str,title: str, current_user: str = Depends(get_current_user)):
     result = ManageReview.delete_review(username,title)
+    if username != current_user:
+        raise HTTPException(status_code=403, detail="")
 
     return {'Delete': True, 'desc': result}

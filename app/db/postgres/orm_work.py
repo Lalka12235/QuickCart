@@ -3,6 +3,7 @@ from app.data.model_pydantic.models import User,Product,Order,UpdateProduct, Upd
 from sqlalchemy import create_engine,select,update,delete,insert
 from sqlalchemy.orm import sessionmaker
 from app.config import settings
+from app.utils.hash import verify_pass,make_hash_pass
 
 
 engine = create_engine(
@@ -31,11 +32,17 @@ class Profile:
 
             if users:
                 return {'User': 'Exist'}
-
-            result = session.execute(insert(UserOrm).values(username=username,password=password)).scalar()
+            
+            hash_pass = make_hash_pass(password)
+            result = session.execute(insert(UserOrm).values(username=username,password=hash_pass)).scalar()
             session.commit()
             return {'Status': 'success'}
         
+    @staticmethod
+    def login_user(username: str):
+        with Session() as session:
+            user = session.execute(select(UserOrm).where(UserOrm.username == username)).scalars().first()
+            return user
         
     @staticmethod
     def delete_account(username: str):

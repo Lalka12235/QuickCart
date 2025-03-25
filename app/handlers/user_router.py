@@ -1,6 +1,7 @@
-from fastapi import APIRouter,HTTPException,status
+from fastapi import APIRouter,HTTPException,status, Depends
 from app.db.postgres.orm_work import Profile
 from app.data.model_pydantic.models import User
+from app.auth.auth import get_current_user
 
 user = APIRouter(
     tags=['Proifle']
@@ -33,8 +34,11 @@ async def select_user(username: str):
     return {'user': user}
 
 @user.delete('/online-shop/user/delete')
-async def delete_user(username: str):
+async def delete_user(username: str, current_user: str = Depends(get_current_user)):
     user = Profile.select_user(username)
+
+    if username != current_user:
+        raise HTTPException(status_code=403, detail="")
 
     if not user:
         raise HTTPException(
