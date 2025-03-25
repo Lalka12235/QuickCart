@@ -1,6 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-import uvicorn
+from app.handlers.order_router import order
+from app.handlers.product_router import product
+from app.handlers.user_router import user
+from app.handlers.reviews_router import review
 
 app = FastAPI(
     title='Online stor',
@@ -21,3 +24,8 @@ app.add_middleware(
     allow_methods=["GET","POST","PUT","DELETE"],
     allow_headers=["*"],
 )
+
+app.include_router(user)
+app.include_router(product)
+app.include_router(order)
+app.include_router(review)

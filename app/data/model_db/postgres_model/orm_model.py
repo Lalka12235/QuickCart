@@ -24,7 +24,6 @@ class ProductOrm(Base):
     title: Mapped[str]
     description: Mapped[str]
     price: Mapped[int]
-    delivered: Mapped[bool]
 
     # Один продукт может быть во многих заказах
     orders: Mapped[list['OrderOrm']] = relationship(back_populates='product')

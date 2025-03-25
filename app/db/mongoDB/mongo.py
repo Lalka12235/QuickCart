@@ -1,6 +1,7 @@
 from pymongo import MongoClient
 from app.db.postgres.orm_work import ManageProduct, Profile
 from app.data.model_pydantic.models import ReviewsModel, Product
+from fastapi.encoders import jsonable_encoder
 
 client = MongoClient('localhost',27017)
 
@@ -15,18 +16,21 @@ class ManageReview:
     @staticmethod
     def get_review(product: str):
         exist_product = ManageProduct.get_one_product(product)
-
-        if not exist_product:
-            return {'Product': 'Not find'}
         
-        result = list(db_col.find({'title': product}))
+        if not exist_product:
+            return {'Product': 'Not found'}
 
-        return {'Find': True,'Product': result}
+        result = db_col.find({product:{'title': product, 'reviews': {'$exists': True}}}) 
+
+        if not result:
+            return {'Product': 'No reviews found'}
+
+        return {'Find': True, 'Product': result}
 
 
     @staticmethod
     def create_review(product: Product,review: ReviewsModel):
-        exist_product = ManageProduct.get_one_product(product)
+        exist_product = ManageProduct.get_one_product(product.title)
         user_review = ManageReview.get_review(product.title)
         exist_user = Profile.select_user(review.username)
 
@@ -54,30 +58,35 @@ class ManageReview:
             } 
         })
 
-        return {'Review': True,'Review': stmt}    
+        stmt_result = jsonable_encoder(stmt)  # Преобразуем результат операции в сериализуемый формат
+
+        return {'Review': True, 'stmt': stmt_result}  
 
         
 
     @staticmethod
     def delete_review(username: str, product: str):
+        # Проверяем существование продукта
         exist_product = ManageProduct.get_one_product(product)
-        user_review = ManageReview.get_review(username)
-
         if not exist_product:
-            return {'Product': 'Not find'}
-        
-        if not user_review:
-            return {'Review for user': 'Юзера с таким отзывом нету'}
-        
+            return {'Product': 'Not found'}
+
+        # Получаем отзывы по продукту
+        user_review = ManageReview.get_review(product)
+        if not user_review or username not in user_review.get('reviews', {}):
+            return {'Review for user': 'No review found for this user'}
+
+        # Выполняем удаление отзыва пользователя
         result = db_col.update_one(
-            {'title': product},  
-            {'$unset': {f'reviews.{username}': ""}}  
+            {'title': product},  # Находим продукт по названию
+            {'$unset': {f'reviews.{username}': ''}}  # Удаляем отзыв по имени пользователя
         )
 
         if result.modified_count > 0:
             return {'Delete': True}
 
         return {'Delete': 'Not found'}
+
 
 
     @staticmethod

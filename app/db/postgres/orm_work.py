@@ -18,26 +18,23 @@ class Profile:
     @staticmethod
     def select_user(username):
         with Session() as session:
-            user = select(UserOrm).where(UserOrm.username == username)
-
-            if user:
-                return {'User': 'Exist'}
-            
-            return user
+            stmt = select(UserOrm.username).where(UserOrm.username == username)
+            result = session.execute(stmt)
+            return result.scalar_one_or_none()
             
 
 
     @staticmethod
-    def register_user(user: User):
+    def register_user(username: str, password: str):
         with Session() as session:
-            user = Profile.select_user(user.username)
+            users = Profile.select_user(username)
 
-            if user:
+            if users:
                 return {'User': 'Exist'}
 
-            result = session.execute(insert(UserOrm).values(user))
+            result = session.execute(insert(UserOrm).values(username=username,password=password)).scalar()
             session.commit()
-            return result
+            return {'Status': 'success'}
         
         
     @staticmethod
@@ -64,7 +61,7 @@ class ManageOrder:
         
     
     @staticmethod
-    def create_order(username: str, order: Order):
+    def create_order(username: str, title: str):
         with Session() as session:
             stmt = select(UserOrm).where(UserOrm.username == username)
             user = session.execute(stmt).scalar_one_or_none()
@@ -72,16 +69,16 @@ class ManageOrder:
             if not user:
                 return {'User': 'Does not exist'}
 
-            product = ManageProduct.get_one_product(order.title)
+            product = ManageProduct.get_one_product(title)
 
             if not product:
                 return {'Product': 'Does not exist'}
 
             new_order = OrderOrm(
-                title=order.title,
-                description=order.description,
-                price=order.price,
-                delivered=order.delivered,
+                title=product.title,
+                description=product.description,
+                price=product.price,
+                delivered=False,
                 user=user,
                 product=product
             )
@@ -89,11 +86,11 @@ class ManageOrder:
             session.add(new_order)
             session.commit()
 
-            return {'success': True, 'order_id': new_order.id, 'product_title': new_order.product.title}
+            return {'success': True, 'order_id': new_order.id, 'product_info': {'title': new_order.title,'description': new_order.description,'price': new_order.price}}
     
 
     @staticmethod
-    def update_order(username: str, upd_order: UpdateOrder):
+    def update_order(username: str,title: str):
         with Session() as session:
             stmt = select(UserOrm).where(UserOrm.username == username)
             user = session.execute(stmt).scalar_one_or_none()
@@ -101,21 +98,21 @@ class ManageOrder:
             if not user:
                 return {'User': 'Does not exist'}
 
-            order_stmt = select(OrderOrm).where(OrderOrm.user_id == user.id, OrderOrm.title == upd_order.title)
+            order_stmt = select(OrderOrm).where(OrderOrm.user_id == user.id, OrderOrm.title == title)
             order = session.execute(order_stmt).scalar_one_or_none()
 
             if not order:
                 return {'Order': 'Does not exist'}
 
-            order.delivered = upd_order.delivered
+            order.delivered = True
 
             session.commit()
 
             return {'success': True, 'updated_order': order.title}
         
     
-    staticmethod
-    def delete_order(username: str):
+    @staticmethod
+    def delete_order(username: str,title: str):
         with Session() as session:
             stmt = select(UserOrm).where(UserOrm.username == username)
             user = session.execute(stmt).scalar_one_or_none()
@@ -124,7 +121,7 @@ class ManageOrder:
                 return {'User': 'Does not exist'}
 
 
-            order_stmt = select(OrderOrm).where(OrderOrm.user_id == user.id)
+            order_stmt = select(OrderOrm).where(OrderOrm.user_id == user.id, OrderOrm.title == title)
             order = session.execute(order_stmt).scalar_one_or_none()
 
             if not order:
@@ -136,41 +133,38 @@ class ManageOrder:
             return {'success': True, 'deleted_order_id': order.id}
 
 
-
-
-
 class ManageProduct:
 
     @staticmethod
     def get_all_products():
         with Session() as session:
-            result = session.execute(select(ProductOrm))
+            result = session.execute(select(ProductOrm)).fetchall()
             return result
 
     @staticmethod
     def get_one_product(title:str):
         with Session() as session:
-            result = session.execute(select(ProductOrm).where(ProductOrm.title == title))
+            result = session.execute(select(ProductOrm).where(ProductOrm.title == title)).scalar_one_or_none()
             return result
     
     @staticmethod
     def create_product(product: Product):
         with Session() as session:
-            result = session.execute(insert(ProductOrm).values(**product))
+            stmt = insert(ProductOrm).values(title=product.title,description=product.description,price=product.price)
+            result = session.execute(stmt).scalar()
             session.commit()
-            return result
+            return {'Result': product}
 
     @staticmethod
     def update_product(title: str,product: UpdateProduct):
         with Session() as session:
-            result = session.execute(update(ProductOrm).where(ProductOrm.title == title).values(product))
+            result = session.execute(update(ProductOrm).where(ProductOrm.title == title).values(title=product.title,description=product.description,price=product.price))
             session.commit()
-            return result
+            return {'Result': product}
     
     @staticmethod
     def delete_product(title: str):
         with Session() as session:
             result = session.execute(delete(ProductOrm).where(ProductOrm.title == title))
             session.commit()
-            return result
-        
+            return result        

@@ -11,8 +11,10 @@ class Order(BaseModel):
     delivered: bool = False
 
 
-class Product(Order):
-    pass
+class Product(BaseModel):
+    title:str
+    description:str
+    price:int
 
 
 class UpdateProduct(Product):
