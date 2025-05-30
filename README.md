@@ -15,3 +15,11 @@ Stop
 ```bash
   docker-compose down
 ```
+
+## Stack
+Python
+FastAPI
+SQLAlchemy
+SQL
+PostgreSQL
+Docker
