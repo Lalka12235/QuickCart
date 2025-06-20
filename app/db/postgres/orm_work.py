@@ -7,7 +7,7 @@ from app.utils.hash import verify_pass,make_hash_pass
 
 
 engine = create_engine(
-    url=settings.db_url,
+    url=settings.sync_db_url,
     echo=True,
 )
 
