@@ -4,15 +4,7 @@ from sqlalchemy import create_engine,select,update,delete,insert
 from sqlalchemy.orm import sessionmaker
 from app.config import settings
 from app.utils.hash import verify_pass,make_hash_pass
-
-
-engine = create_engine(
-    url=settings.sync_db_url,
-    echo=True,
-)
-
-Session = sessionmaker(bind=engine)
-
+from app.session import Session
 
 class Profile:
 
