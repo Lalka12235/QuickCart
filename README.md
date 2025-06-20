@@ -1,3 +1,18 @@
+# QuickCart
+
+QuickCart is a minimalistic but functional API for an online store, including:
+- ✅ Products (adding, viewing, filtering)
+- ✅ Shopping cart (adding/removing products)
+- ✅ Orders (checkout, history)
+
+## 🛠 Tech Stack
+
+- **Backend**: Python (FastAPI)
+- **Database**: PostgreSQL
+- **ORM**: SQLAlchemy
+- **Containerization**: Docker
+
+
 ## Deployment
 
 
@@ -16,9 +31,4 @@ Stop
   docker-compose down
 ```
 
-## 🛠 Tech Stack
 
-- **Backend**: Python (FastAPI)
-- **Database**: PostgreSQL
-- **ORM**: SQLAlchemy
-- **Containerization**: Docker
