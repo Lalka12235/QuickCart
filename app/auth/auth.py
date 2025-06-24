@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from app.utils.jwt_token import encode_jwt, decode_jwt, SECRET_KEY, ALGORITHM
 from app.utils.hash import verify_pass
-from app.db.postgres.orm_work import Profile
+from app.orm_work import Profile
 
 auth = APIRouter(
     tags=['Auth']

@@ -1,5 +1,5 @@
-from app.data.model_db.postgres_model.orm_model import UserOrm,OrderOrm,ProductOrm
-from app.data.model_pydantic.models import User,Product,Order,UpdateProduct, UpdateOrder
+from app.models.orm_model import UserOrm,OrderOrm,ProductOrm
+from app.schemas.models import User,Product,Order,UpdateProduct, UpdateOrder
 from sqlalchemy import create_engine,select,update,delete,insert
 from sqlalchemy.orm import sessionmaker
 from app.config import settings

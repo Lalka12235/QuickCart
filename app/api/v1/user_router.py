@@ -1,6 +1,6 @@
 from fastapi import APIRouter,HTTPException,status, Depends
-from app.db.postgres.orm_work import Profile
-from app.data.model_pydantic.models import User
+from app.orm_work import Profile
+from app.schemas.models import User
 from app.auth.auth import get_current_user
 
 user = APIRouter(

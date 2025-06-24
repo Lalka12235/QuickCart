@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, status,Depends
-from app.db.postgres.orm_work import ManageOrder
+from app.orm_work import ManageOrder
 from app.auth.auth import get_current_user
 
 order = APIRouter(
