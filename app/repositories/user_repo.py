@@ -16,7 +16,6 @@ class UserRepository:
             )
 
             session.add(new_user)
-            session.flush()
             session.commit()
 
             return new_user
@@ -40,3 +39,5 @@ class UserRepository:
             session.execute(stmt)
             session.commit()
             return True
+        
+    

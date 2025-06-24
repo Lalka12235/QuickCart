@@ -1,6 +1,6 @@
 from fastapi import HTTPException,status
 from app.repositories.user_repo import UserRepository
-from app.schemas.user_schema import UserCreateSchema,UserDeleteSchema
+from app.schemas.user_schema import UserCreateSchema,UserDeleteSchema,UserOutSchema
 
 class UserService:
 
@@ -43,4 +43,25 @@ class UserService:
         return {
         "success": True,
         "detail": "user delete",
+        }
+    
+
+    @staticmethod
+    def get_user_by_email(email: str) -> UserOutSchema:
+        user = UserRepository.get_user_by_email(email)
+
+        if not user:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail='User not found'
+            )
+        
+        return {
+            'success': True,
+            'derail': 'user found',
+            'user':{
+                'user_id': user.id,
+                'username': user.username,
+                'email': user.email,
+            }
         }
