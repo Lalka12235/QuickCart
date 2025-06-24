@@ -1,35 +1,52 @@
 from sqlalchemy.orm import Mapped, mapped_column, DeclarativeBase, relationship
-from sqlalchemy import ForeignKey
+from sqlalchemy import ForeignKey, Table,Column, Text
+from sqlalchemy.dialects.postgresql import UUID
+import uuid
+
 
 
 class Base(DeclarativeBase):
     pass
 
 
-class UserOrm(Base):  
+class UserModel(Base):  
     __tablename__ = 'users'
 
-    id: Mapped[int] = mapped_column(primary_key=True)
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True),primary_key=True,default=uuid.uuid4)
+    email: Mapped[str]
     username: Mapped[str]
     password: Mapped[str]
 
-    # Один пользователь может иметь много заказов
-    orders: Mapped[list['OrderOrm']] = relationship(back_populates='user')
+    orders: Mapped[list['OrderModel']] = relationship(back_populates='user')
+    reviews: Mapped[list['ReviewModel']] = relationship(back_populates='user')
 
 
-class ProductOrm(Base):
+order_product_association = Table(
+    'order_products',
+    Base.metadata,
+    Column('order_id', ForeignKey('orders.id'), primary_key=True),
+    Column('product_id', ForeignKey('products.id'), primary_key=True)
+)
+
+
+class ProductModel(Base):
     __tablename__ = 'products'
 
     id: Mapped[int] = mapped_column(primary_key=True)
     title: Mapped[str]
     description: Mapped[str]
     price: Mapped[int]
+    quantity: Mapped[int]
 
-    # Один продукт может быть во многих заказах
-    orders: Mapped[list['OrderOrm']] = relationship(back_populates='product')
+    orders: Mapped[list['OrderModel']] = relationship(
+    secondary=order_product_association,
+    back_populates="products"
+    )
+
+    reviews: Mapped[list['ReviewModel']] = relationship(back_populates='product')
 
 
-class OrderOrm(Base):
+class OrderModel(Base):
     __tablename__ = 'orders'
 
     id: Mapped[int] = mapped_column(primary_key=True) 
@@ -38,9 +55,24 @@ class OrderOrm(Base):
     price: Mapped[int]
     delivered: Mapped[bool]
     
-    user_id: Mapped[int] = mapped_column(ForeignKey('users.id'))
+    user_id: Mapped[uuid.UUID] = mapped_column(ForeignKey('users.id'))
+
+    user: Mapped['UserModel'] = relationship(back_populates='orders') 
+    products: Mapped[list['ProductModel']] = relationship(
+    secondary=order_product_association,
+    back_populates="orders"
+)
+
+
+class ReviewModel(Base):
+    __tablename__ = 'reviews'
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    title: Mapped[str]
+    rating: Mapped[int]
+    description: Mapped[str] = mapped_column(Text)
+    user_id: Mapped[uuid.UUID] = mapped_column(ForeignKey('users.id'))
     product_id: Mapped[int] = mapped_column(ForeignKey('products.id'))
 
-    # Каждый заказ принадлежит одному пользователю и одному продукту
-    user: Mapped['UserOrm'] = relationship(back_populates='orders') 
-    product: Mapped['ProductOrm'] = relationship(back_populates='orders') 
+    product: Mapped['ProductModel'] = relationship(back_populates='reviews')
+    user: Mapped['UserModel'] = relationship(back_populates='reviews')
