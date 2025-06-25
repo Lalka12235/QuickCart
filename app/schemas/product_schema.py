@@ -1,10 +1,12 @@
 from pydantic import BaseModel
 
-class Product(BaseModel):
+class ProductSchema(BaseModel):
     title:str
     description:str
     price:int
+    quantity: int
 
 
-class UpdateProduct(Product):
-    pass
+class UpdateProductSchema(BaseModel):
+    price:int
+    quantity: int
