@@ -1,7 +1,8 @@
 from sqlalchemy import select,update,delete,func
 from app.config.session import Session
 from app.models.orm_model import ProductModel
-from app.schemas.product_schema import ProductSchema, UpdateProductSchema
+from app.schemas.product_schema import ProductSchema
+from typing import Any
 
 
 class ProductRepository:
@@ -34,19 +35,22 @@ class ProductRepository:
 
             session.add(new_product)
             session.commit()
+            session.refresh(new_product)
             return new_product
 
     @staticmethod
-    def update_product(title: str, product: UpdateProductSchema) -> bool:
+    def update_product(title: str, product: dict[str,Any]) -> bool:
         with Session() as session:
             stmt = (
                 update(ProductModel)
                 .where(ProductModel.title == title)
-                .values(price=product.price, quantity=product.quantity)
+                .values(**product)
             )
             result = session.execute(stmt)
             session.commit()
-            return result.rowcount > 0  
+            stmt_select = select(ProductModel).where(ProductModel.title == product.get('title', title))
+            updated_product = session.execute(stmt_select).scalar_one_or_none()
+            return updated_product 
     
 
     @staticmethod
@@ -76,6 +80,7 @@ class ProductRepository:
                 ProductModel.id == product_id,
             ).values(quantity=ProductModel.quantity + delta)
             result = session.execute(stmt)
+            session.commit()
             return result.rowcount > 0
         
 
@@ -86,5 +91,4 @@ class ProductRepository:
             result = session.execute(stmt)
             return result.scalar()
         
-    
     
