@@ -1,5 +1,5 @@
 from sqlalchemy import select, delete,and_
-from app.session import Session
+from app.config.session import Session
 from app.models.orm_model import UserModel
 from app.utils.hash import make_hash_pass
 
