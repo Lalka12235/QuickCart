@@ -1,7 +1,8 @@
 from sqlalchemy.orm import Mapped, mapped_column, DeclarativeBase, relationship
-from sqlalchemy import ForeignKey, Table,Column, Text
+from sqlalchemy import ForeignKey, Table,Column, Text, DateTime, Integer
 from sqlalchemy.dialects.postgresql import UUID
 import uuid
+from datetime import datetime
 
 
 
@@ -25,7 +26,8 @@ order_product_association = Table(
     'order_products',
     Base.metadata,
     Column('order_id', ForeignKey('orders.id'), primary_key=True),
-    Column('product_id', ForeignKey('products.id'), primary_key=True)
+    Column('product_id', ForeignKey('products.id'), primary_key=True),
+    Column('quantity', Integer, nullable=False, default=1),
 )
 
 
@@ -50,12 +52,11 @@ class OrderModel(Base):
     __tablename__ = 'orders'
 
     id: Mapped[int] = mapped_column(primary_key=True) 
-    title: Mapped[str]
-    description: Mapped[str]
-    price: Mapped[int]
-    delivered: Mapped[bool]
-    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    address: Mapped[str]
+    delivered: Mapped[bool] = mapped_column(default=False)
     user_id: Mapped[uuid.UUID] = mapped_column(ForeignKey('users.id'))
+
 
     user: Mapped['UserModel'] = relationship(back_populates='orders') 
     products: Mapped[list['ProductModel']] = relationship(

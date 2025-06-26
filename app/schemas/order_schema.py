@@ -1,11 +1,10 @@
 from pydantic import BaseModel, Field
 
-class Order(BaseModel):
-    title: str = Field(..., description="Order title")
-    description: str = Field(..., description="Order description")
-    price: int = Field(..., gt=0, description="Order price (positive integer)")
+class OrderProductItem(BaseModel):
+    product_id: int
+    quantity: int = Field(1, description="Quantity of product")
+
+class OrderSchema(BaseModel):
+    address: str = Field(description='Your address for delivery')
     delivered: bool = Field(False, description="Delivery status, default is False")
-
-
-class UpdateOrder(BaseModel):
-    delivered: bool | None = Field(None, description="Updated delivery status")
+    products: list[OrderProductItem] = Field(..., description="List of products in the order")
