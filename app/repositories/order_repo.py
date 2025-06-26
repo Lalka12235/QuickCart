@@ -19,7 +19,7 @@ class OrderRepostiroy:
 
 
     @staticmethod
-    def get_all_order_by_id(user_id: int) -> OrderModel:
+    def get_all_order_by_user_id(user_id: int) -> OrderModel:
         with Session() as session:
             stmt = select(OrderModel).where(OrderModel.user_id == user_id)
             result = session.execute(stmt)
@@ -66,11 +66,11 @@ class OrderRepostiroy:
             return result.rowcount > 0
         
     @staticmethod
-    def delete_order(id: int, user_id: uuid.UUID) -> bool:
+    def delete_order(order_id: int, user_id: uuid.UUID) -> bool:
         with Session() as session:
             stmt = delete(OrderModel).where(
                 and_(
-                    OrderModel.id == id,OrderModel.user_id == user_id
+                    OrderModel.id == order_id,OrderModel.user_id == user_id
             ))
             session.execute(stmt)
             session.commit()
@@ -82,10 +82,3 @@ class OrderRepostiroy:
             stmt = select(func.count(OrderModel.id)).where(OrderModel.user_id == user_id)
             result = session.execute(stmt)
             return result.scalar_one()
-        
-
-    @staticmethod
-    def get_products_by_order_id(order_id: int) -> list:
-        with Session() as session:
-            order = session.get(OrderModel, order_id)
-            return order.products
