@@ -17,19 +17,6 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-    
-
-#  mongodb:
-#    image: mongo:latest
-#    container_name: mongo-for-api
-#    networks:
-#      - netapi
-#    ports:
-#      - "27017:27017"
-#    environment:
-#      - ME_CONFIG_MONGO_URL=mongodb://root:example@mongo:27017/
-#    volumes:
-#      - mongo_vol
 
   backend:
     build:
@@ -49,4 +36,3 @@ networks:
 
 volumes:
   postgre_vol:
-  #mongo_vol:
