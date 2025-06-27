@@ -16,6 +16,7 @@ class ProductService:
             )
         
         return {'status': 'found','detail':{
+            'id':product.id,
             'title': product.title,
             'description': product.description,
             'price': product.price,
