@@ -1,9 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api.order_router import order
-from app.api.product_router import product
-from app.api.user_router import user
-from app.auth.auth import auth
+from app.api.v1.user_router import user
 
 app = FastAPI(
     title='Online stor',
@@ -25,7 +22,5 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 app.include_router(user)
-app.include_router(product)
-app.include_router(order)
-app.include_router(auth)
