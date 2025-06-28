@@ -1,11 +1,14 @@
 from fastapi import HTTPException,status
 from app.repositories.user_repo import UserRepository
 from app.schemas.user_schema import UserCreateSchema,UserDeleteSchema,UserOutSchema
+from typing import Any
+from app.utils.hash import make_hash_pass,verify_pass
+
 
 class UserService:
 
     @staticmethod
-    def create_user(user: UserCreateSchema) -> dict:
+    def create_user(user: UserCreateSchema) -> dict[str,Any]:
         exist_user = UserRepository.get_user_by_email(user.email)
 
         if exist_user:
@@ -29,7 +32,7 @@ class UserService:
     
 
     @staticmethod
-    def delete_user(user: UserDeleteSchema) -> dict:
+    def delete_user(user: UserDeleteSchema) -> dict[str,Any]:
         exist_user = UserRepository.get_user_by_email(user.email)
 
         if not exist_user:
@@ -37,8 +40,16 @@ class UserService:
                 status_code=status.HTTP_400_BAD_REQUEST,
                 detail='User dont exist'
             )
-        
-        result = UserRepository.delete_user(user.email,user.password)
+        verify = verify_pass(user.password,exist_user.password)
+
+        if not verify:
+            raise HTTPException(
+                status_code=400,
+                detail='Invalid email or password'
+            )
+
+
+        result = UserRepository.delete_user(user.email)
 
         return {
         "success": True,
@@ -47,7 +58,7 @@ class UserService:
     
 
     @staticmethod
-    def get_user_by_email(email: str) -> UserOutSchema:
+    def get_user_by_email(email: str) -> dict[str,Any]:
         user = UserRepository.get_user_by_email(email)
 
         if not user:
@@ -58,7 +69,7 @@ class UserService:
         
         return {
             'success': True,
-            'derail': 'user found',
+            'detail': 'user found',
             'user':{
                 'user_id': user.id,
                 'username': user.username,
