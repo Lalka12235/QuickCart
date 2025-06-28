@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from app.config import settings
+from app.config.config import settings
 
 engine = create_engine(
     url=settings.sync_db_url,
