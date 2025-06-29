@@ -4,7 +4,7 @@ from app.config.config import settings
 
 engine = create_engine(
     url=settings.sync_db_url,
-    echo=True,
+    echo=False,#True для отладки
 )
 
 Session = sessionmaker(bind=engine)
