@@ -15,13 +15,14 @@ class ProductService:
                 detail='Product dont found'
             )
         
-        return {'status': 'found','detail':{
-            'id':product.id,
-            'title': product.title,
-            'description': product.description,
-            'price': product.price,
-            'quantiy': product.quantity
-        }}
+        return product
+        #return {'status': 'found','detail':{
+        #    'id':product.id,
+        #    'title': product.title,
+        #    'description': product.description,
+        #    'price': product.price,
+        #    'quantiy': product.quantity
+        #}}
     
 
     @staticmethod

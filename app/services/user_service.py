@@ -67,12 +67,13 @@ class UserService:
                 detail='User not found'
             )
         
-        return {
-            'success': True,
-            'detail': 'user found',
-            'user':{
-                'user_id': user.id,
-                'username': user.username,
-                'email': user.email,
-            }
-        }
+        return user
+        #return {
+        #    'success': True,
+        #    'detail': 'user found',
+        #    'user':{
+        #        'user_id': user.id,
+        #        'username': user.username,
+        #        'email': user.email,
+        #    }
+        #}
