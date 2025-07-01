@@ -1,8 +1,8 @@
 from fastapi import HTTPException,status
 from app.repositories.user_repo import UserRepository
-from app.schemas.user_schema import UserCreateSchema,UserDeleteSchema,UserOutSchema
+from app.schemas.user_schema import UserCreateSchema,UserDeleteSchema
 from typing import Any
-from app.utils.hash import make_hash_pass,verify_pass
+from app.utils.hash import verify_pass
 
 
 class UserService:

@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api.v1.user_router import user
 from app.api.v1.product_router import product
 from app.api.v1.order_router import order
-
+from app.api.v1.review_router import review
 
 
 app = FastAPI(
@@ -30,3 +30,4 @@ app.add_middleware(
 app.include_router(user)
 app.include_router(product)
 app.include_router(order)
+app.include_router(review)
