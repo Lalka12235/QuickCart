@@ -37,6 +37,7 @@ class ReviewRepository:
             )
             session.add(new_review)
             session.commit()
+            session.refresh(new_review)
             return new_review
         
 

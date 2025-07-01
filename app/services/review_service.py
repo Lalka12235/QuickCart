@@ -47,7 +47,7 @@ class ReviewService:
         if not reviews:
             raise HTTPException(
                 status_code=404,
-                detail='Review not found'
+                detail='Reviews not found'
             )
         
         return {
@@ -72,9 +72,8 @@ class ReviewService:
         product = ProductService.get_one_product_by_title(title)
         product_id = product.id
 
-        review = ReviewRepository.get_review_about_product_by_user_id(user_id,product_id)
-
-        if review:
+        reviews = ReviewRepository.get_review_about_product_by_user_id(user_id,product_id)
+        if reviews:
             raise HTTPException(
                 status_code=409,
                 detail='Maybe should delete review or change'
@@ -103,9 +102,9 @@ class ReviewService:
         product = ProductService.get_one_product_by_title(title)
         product_id = product.id
 
-        review = ReviewRepository.get_review_about_product_by_user_id(user_id,product_id)
+        reviews = ReviewRepository.get_review_about_product_by_user_id(user_id,product_id)
 
-        if not review:
+        if not reviews:
             raise HTTPException(
                 status_code=404,
                 detail='Review not found'

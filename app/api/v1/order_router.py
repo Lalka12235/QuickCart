@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from app.schemas.order_schema import OrderProductItem, OrderSchema
+from app.schemas.order_schema import OrderSchema
 from app.services.order_service import OrderService
 
 order = APIRouter(
