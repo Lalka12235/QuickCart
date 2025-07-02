@@ -31,3 +31,11 @@ app.include_router(user)
 app.include_router(product)
 app.include_router(order)
 app.include_router(review)
+
+@app.get('/ping',
+        summary="Проверка работоспособности сервера",
+        description='Этот эндпоинт выполняет простую проверку состояния сервера.',
+        tags=['Health Check'],
+        )
+async def ping():
+    return 'Server is running'

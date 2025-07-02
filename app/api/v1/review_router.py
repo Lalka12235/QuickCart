@@ -38,7 +38,7 @@ async def get_all_review_product_by_product_id(title_product: str):
     return ReviewService.get_all_review_product_by_product_id(title_product)
 
 
-@review.get('/revies/count',summary='Total review product')
+@review.get('/reviews/count',summary='Total review product')
 async def count_total_review(title_product: str):
     return ReviewService.count_total_review(title_product)
 
