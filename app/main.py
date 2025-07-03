@@ -4,7 +4,10 @@ from app.api.v1.user_router import user
 from app.api.v1.product_router import product
 from app.api.v1.order_router import order
 from app.api.v1.review_router import review
+from app.middleware.log_middleware import LogMiddleware
+from app.logger.log_config import configure_logging
 
+configure_logging()
 
 app = FastAPI(
     title='Online store',
@@ -17,6 +20,8 @@ origins = [
     "http://localhost",
     "http://localhost:8080/docs",
 ]
+
+app.add_middleware(LogMiddleware)
 
 app.add_middleware(
     CORSMiddleware,
