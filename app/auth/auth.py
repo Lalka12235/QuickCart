@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from app.utils.jwt_token import encode_jwt, decode_jwt, SECRET_KEY, ALGORITHM
 from app.utils.hash import verify_pass
-from app.orm_work import Profile
+from app.services.user_service import UserService
 
 auth = APIRouter(
     tags=['Auth']
@@ -23,7 +23,7 @@ def get_current_user(token: str = Depends(oauth2_scheme)):
 
 @auth.post('/token')
 async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
-    user = Profile.login_user(form_data.username)
+    user = UserService.login_user(form_data.username)
 
     if not user:
         raise HTTPException(status_code=400, detail="User not found")
