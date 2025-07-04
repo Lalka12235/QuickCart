@@ -1,0 +1,1121 @@
+[2025-07-04 09:52:40] uvicorn.error:318 INFO    - Will watch for changes in these directories: ['D:\\Programming\\Projects\\QuickCart\\app']
+[2025-07-04 09:52:40] uvicorn.error:524 INFO    - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-07-04 09:52:40] uvicorn.error:80 INFO    - Started reloader process [2964] using WatchFiles
+[2025-07-04 09:52:41] uvicorn.error:83 INFO    - Started server process [9068]
+[2025-07-04 09:52:41] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 09:52:41] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 09:52:42] root:25 INFO    - GET http://127.0.0.1:8000/docs - 200 - 0.29ms
+[2025-07-04 09:52:42] root:25 INFO    - GET http://127.0.0.1:8000/openapi.json - 200 - 8.31ms
+[2025-07-04 09:52:48] root:25 INFO    - GET http://127.0.0.1:8000/docs - 200 - 0.26ms
+[2025-07-04 09:52:48] root:25 INFO    - GET http://127.0.0.1:8000/openapi.json - 200 - 0.35ms
+[2025-07-04 09:53:23] root:25 INFO    - GET http://127.0.0.1:8000/ping - 200 - 0.26ms
+[2025-07-04 09:53:51] root:25 INFO    - GET http://127.0.0.1:8000/users/email=fisher12235@mail.ru - 404 - 306.92ms
+[2025-07-04 09:54:01] root:25 INFO    - GET http://127.0.0.1:8000/users/fisher12235@mail.ru - 200 - 6.68ms
+[2025-07-04 09:54:53] root:25 INFO    - GET http://127.0.0.1:8000/ping - 200 - 0.23ms
+[2025-07-04 09:54:54] root:25 INFO    - GET http://127.0.0.1:8000/ping - 200 - 0.24ms
+[2025-07-04 09:55:42] root:25 INFO    - GET http://127.0.0.1:8000/users/fisher12235@mail.ru - 200 - 1.30ms
+[2025-07-04 10:03:28] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:03:28] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:03:28] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:03:28] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:03:28] uvicorn.error:93 INFO    - Finished server process [9068]
+[2025-07-04 10:03:36] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:03:44] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:03:46] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:03:48] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:03:50] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:03:55] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:03:58] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:03:59] uvicorn.error:83 INFO    - Started server process [19448]
+[2025-07-04 10:03:59] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:03:59] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:04:22] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:04:22] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:04:22] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:04:22] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:04:22] uvicorn.error:93 INFO    - Finished server process [19448]
+[2025-07-04 10:04:24] uvicorn.error:83 INFO    - Started server process [27364]
+[2025-07-04 10:04:24] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:04:24] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:04:24] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:04:24] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:04:24] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:04:24] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:04:24] uvicorn.error:93 INFO    - Finished server process [27364]
+[2025-07-04 10:04:26] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:04:27] uvicorn.error:83 INFO    - Started server process [19520]
+[2025-07-04 10:04:27] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:04:27] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:04:39] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:04:39] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:04:39] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:04:39] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:04:39] uvicorn.error:93 INFO    - Finished server process [19520]
+[2025-07-04 10:04:40] uvicorn.error:83 INFO    - Started server process [23976]
+[2025-07-04 10:04:40] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:04:40] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:04:42] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:04:42] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:04:42] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:04:42] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:04:42] uvicorn.error:93 INFO    - Finished server process [23976]
+[2025-07-04 10:04:48] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:04:54] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:04:55] uvicorn.error:83 INFO    - Started server process [23768]
+[2025-07-04 10:04:55] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:04:55] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:05:30] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:05:30] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:05:30] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:05:30] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:05:30] uvicorn.error:93 INFO    - Finished server process [23768]
+[2025-07-04 10:05:31] uvicorn.error:83 INFO    - Started server process [9664]
+[2025-07-04 10:05:31] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:05:31] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:05:36] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:05:36] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:05:36] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:05:36] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:05:36] uvicorn.error:93 INFO    - Finished server process [9664]
+[2025-07-04 10:05:37] uvicorn.error:83 INFO    - Started server process [6180]
+[2025-07-04 10:05:37] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:05:37] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:05:42] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:05:42] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:05:42] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:05:42] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:05:42] uvicorn.error:93 INFO    - Finished server process [6180]
+[2025-07-04 10:05:43] uvicorn.error:83 INFO    - Started server process [11064]
+[2025-07-04 10:05:43] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:05:43] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:06:19] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\base.py'. Reloading...
+[2025-07-04 10:06:19] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:06:19] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:06:19] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:06:19] uvicorn.error:93 INFO    - Finished server process [11064]
+[2025-07-04 10:06:20] uvicorn.error:83 INFO    - Started server process [7296]
+[2025-07-04 10:06:20] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:06:20] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:06:32] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\base.py'. Reloading...
+[2025-07-04 10:06:32] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:06:33] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:06:33] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:06:33] uvicorn.error:93 INFO    - Finished server process [7296]
+[2025-07-04 10:06:34] uvicorn.error:83 INFO    - Started server process [6112]
+[2025-07-04 10:06:34] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:06:34] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:06:37] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:06:37] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:06:37] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:06:37] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:06:37] uvicorn.error:93 INFO    - Finished server process [6112]
+[2025-07-04 10:06:38] uvicorn.error:83 INFO    - Started server process [20156]
+[2025-07-04 10:06:38] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:06:38] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:06:49] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:06:49] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:06:49] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:06:49] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:06:49] uvicorn.error:93 INFO    - Finished server process [20156]
+[2025-07-04 10:06:50] uvicorn.error:83 INFO    - Started server process [19896]
+[2025-07-04 10:06:50] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:06:50] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:06:52] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:06:52] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:06:52] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:06:52] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:06:52] uvicorn.error:93 INFO    - Finished server process [19896]
+[2025-07-04 10:06:53] uvicorn.error:83 INFO    - Started server process [7112]
+[2025-07-04 10:06:53] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:06:53] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:07:01] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:07:01] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:07:01] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:07:01] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:07:01] uvicorn.error:93 INFO    - Finished server process [7112]
+[2025-07-04 10:07:02] uvicorn.error:83 INFO    - Started server process [16060]
+[2025-07-04 10:07:02] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:07:02] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:07:07] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:07:07] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:07:07] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:07:07] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:07:07] uvicorn.error:93 INFO    - Finished server process [16060]
+[2025-07-04 10:07:08] uvicorn.error:83 INFO    - Started server process [6112]
+[2025-07-04 10:07:08] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:07:08] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:07:08] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:07:08] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:07:09] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:07:09] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:07:09] uvicorn.error:93 INFO    - Finished server process [6112]
+[2025-07-04 10:07:10] uvicorn.error:83 INFO    - Started server process [6952]
+[2025-07-04 10:07:10] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:07:10] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:07:18] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:07:18] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:07:18] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:07:18] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:07:18] uvicorn.error:93 INFO    - Finished server process [6952]
+[2025-07-04 10:07:20] uvicorn.error:83 INFO    - Started server process [12772]
+[2025-07-04 10:07:20] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:07:20] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:07:42] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:07:42] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:07:42] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:07:42] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:07:42] uvicorn.error:93 INFO    - Finished server process [12772]
+[2025-07-04 10:07:44] uvicorn.error:83 INFO    - Started server process [18048]
+[2025-07-04 10:07:44] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:07:44] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:07:47] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:07:47] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:07:47] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:07:47] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:07:47] uvicorn.error:93 INFO    - Finished server process [18048]
+[2025-07-04 10:07:48] uvicorn.error:83 INFO    - Started server process [6832]
+[2025-07-04 10:07:48] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:07:48] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:07:50] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:07:50] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:07:51] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:07:51] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:07:51] uvicorn.error:93 INFO    - Finished server process [6832]
+[2025-07-04 10:07:52] uvicorn.error:83 INFO    - Started server process [16556]
+[2025-07-04 10:07:52] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:07:52] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:07:54] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:07:54] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:07:54] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:07:54] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:07:54] uvicorn.error:93 INFO    - Finished server process [16556]
+[2025-07-04 10:07:55] uvicorn.error:83 INFO    - Started server process [22764]
+[2025-07-04 10:07:55] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:07:55] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:08:01] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_model.py'. Reloading...
+[2025-07-04 10:08:01] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:08:01] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:08:01] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:08:01] uvicorn.error:93 INFO    - Finished server process [22764]
+[2025-07-04 10:08:03] uvicorn.error:83 INFO    - Started server process [27280]
+[2025-07-04 10:08:03] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:08:03] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:08:05] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_model.py'. Reloading...
+[2025-07-04 10:08:05] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:08:05] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:08:05] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:08:05] uvicorn.error:93 INFO    - Finished server process [27280]
+[2025-07-04 10:08:07] uvicorn.error:83 INFO    - Started server process [27488]
+[2025-07-04 10:08:07] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:08:07] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:08:10] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_model.py'. Reloading...
+[2025-07-04 10:08:10] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:08:10] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:08:10] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:08:10] uvicorn.error:93 INFO    - Finished server process [27488]
+[2025-07-04 10:08:11] uvicorn.error:83 INFO    - Started server process [16120]
+[2025-07-04 10:08:11] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:08:11] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:08:16] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\review_model.py'. Reloading...
+[2025-07-04 10:08:16] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:08:17] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:08:17] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:08:17] uvicorn.error:93 INFO    - Finished server process [16120]
+[2025-07-04 10:08:18] uvicorn.error:83 INFO    - Started server process [10928]
+[2025-07-04 10:08:18] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:08:18] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:08:21] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\review_model.py'. Reloading...
+[2025-07-04 10:08:21] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:08:21] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:08:21] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:08:21] uvicorn.error:93 INFO    - Finished server process [10928]
+[2025-07-04 10:08:22] uvicorn.error:83 INFO    - Started server process [11472]
+[2025-07-04 10:08:22] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:08:22] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:08:24] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\review_model.py'. Reloading...
+[2025-07-04 10:08:24] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:08:24] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:08:24] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:08:24] uvicorn.error:93 INFO    - Finished server process [11472]
+[2025-07-04 10:08:25] uvicorn.error:83 INFO    - Started server process [14980]
+[2025-07-04 10:08:25] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:08:25] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:08:26] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\review_model.py'. Reloading...
+[2025-07-04 10:08:26] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:08:26] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:08:26] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:08:26] uvicorn.error:93 INFO    - Finished server process [14980]
+[2025-07-04 10:08:27] uvicorn.error:83 INFO    - Started server process [15656]
+[2025-07-04 10:08:27] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:08:27] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:08:28] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\review_model.py'. Reloading...
+[2025-07-04 10:08:28] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:08:28] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:08:28] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:08:28] uvicorn.error:93 INFO    - Finished server process [15656]
+[2025-07-04 10:08:29] uvicorn.error:83 INFO    - Started server process [16172]
+[2025-07-04 10:08:29] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:08:29] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:08:37] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\review_model.py'. Reloading...
+[2025-07-04 10:08:37] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:08:37] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:08:37] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:08:37] uvicorn.error:93 INFO    - Finished server process [16172]
+[2025-07-04 10:08:38] uvicorn.error:83 INFO    - Started server process [24080]
+[2025-07-04 10:08:38] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:08:38] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:08:43] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\review_model.py'. Reloading...
+[2025-07-04 10:08:43] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:08:43] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:08:43] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:08:43] uvicorn.error:93 INFO    - Finished server process [24080]
+[2025-07-04 10:08:44] uvicorn.error:83 INFO    - Started server process [25220]
+[2025-07-04 10:08:44] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:08:44] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:08:49] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:08:49] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:08:49] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:08:49] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:08:49] uvicorn.error:93 INFO    - Finished server process [25220]
+[2025-07-04 10:08:50] uvicorn.error:83 INFO    - Started server process [23312]
+[2025-07-04 10:08:50] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:08:50] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:08:53] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:08:54] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:08:54] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:08:54] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:08:54] uvicorn.error:93 INFO    - Finished server process [23312]
+[2025-07-04 10:08:55] uvicorn.error:83 INFO    - Started server process [27624]
+[2025-07-04 10:08:55] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:08:55] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:08:56] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:08:56] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:08:56] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:08:56] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:08:56] uvicorn.error:93 INFO    - Finished server process [27624]
+[2025-07-04 10:08:58] uvicorn.error:83 INFO    - Started server process [9284]
+[2025-07-04 10:08:58] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:08:58] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:09:03] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:09:03] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:09:03] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:09:03] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:09:03] uvicorn.error:93 INFO    - Finished server process [9284]
+[2025-07-04 10:09:04] uvicorn.error:83 INFO    - Started server process [6572]
+[2025-07-04 10:09:04] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:09:04] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:09:06] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:09:06] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:09:07] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:09:07] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:09:07] uvicorn.error:93 INFO    - Finished server process [6572]
+[2025-07-04 10:09:08] uvicorn.error:83 INFO    - Started server process [16556]
+[2025-07-04 10:09:08] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:09:08] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:09:15] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:09:15] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:09:15] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:09:15] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:09:15] uvicorn.error:93 INFO    - Finished server process [16556]
+[2025-07-04 10:09:16] uvicorn.error:83 INFO    - Started server process [15240]
+[2025-07-04 10:09:16] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:09:16] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:09:18] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:09:18] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:09:18] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:09:18] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:09:18] uvicorn.error:93 INFO    - Finished server process [15240]
+[2025-07-04 10:09:19] uvicorn.error:83 INFO    - Started server process [5696]
+[2025-07-04 10:09:19] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:09:19] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:09:23] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:09:23] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:09:23] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:09:23] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:09:23] uvicorn.error:93 INFO    - Finished server process [5696]
+[2025-07-04 10:09:24] uvicorn.error:83 INFO    - Started server process [23116]
+[2025-07-04 10:09:24] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:09:24] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:09:29] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:09:29] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:09:29] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:09:29] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:09:29] uvicorn.error:93 INFO    - Finished server process [23116]
+[2025-07-04 10:09:30] uvicorn.error:83 INFO    - Started server process [22048]
+[2025-07-04 10:09:30] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:09:30] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:09:30] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:09:30] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:09:31] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:09:31] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:09:31] uvicorn.error:93 INFO    - Finished server process [22048]
+[2025-07-04 10:09:32] uvicorn.error:83 INFO    - Started server process [15924]
+[2025-07-04 10:09:32] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:09:32] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:09:33] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:09:33] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:09:33] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:09:33] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:09:33] uvicorn.error:93 INFO    - Finished server process [15924]
+[2025-07-04 10:09:34] uvicorn.error:83 INFO    - Started server process [12100]
+[2025-07-04 10:09:34] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:09:34] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:09:37] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:09:37] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:09:37] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:09:37] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:09:37] uvicorn.error:93 INFO    - Finished server process [12100]
+[2025-07-04 10:09:38] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:09:38] uvicorn.error:83 INFO    - Started server process [6296]
+[2025-07-04 10:09:38] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:09:38] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:09:38] uvicorn.error:134 ERROR   - Traceback (most recent call last):
+  File "C:\Users\nicea\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\nicea\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 721, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nicea\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\nicea\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Programming\Projects\QuickCart\.venv\Lib\site-packages\starlette\routing.py", line 699, in lifespan
+    await receive()
+  File "d:\Programming\Projects\QuickCart\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nicea\AppData\Local\Programs\Python\Python313\Lib\asyncio\queues.py", line 186, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+[2025-07-04 10:09:39] uvicorn.error:83 INFO    - Started server process [18436]
+[2025-07-04 10:09:39] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:09:39] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:09:57] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:09:57] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:09:57] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:09:57] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:09:57] uvicorn.error:93 INFO    - Finished server process [18436]
+[2025-07-04 10:09:58] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:09:58] uvicorn.error:83 INFO    - Started server process [19664]
+[2025-07-04 10:09:58] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:09:58] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:09:58] uvicorn.error:134 ERROR   - Traceback (most recent call last):
+  File "C:\Users\nicea\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\nicea\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 721, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nicea\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\nicea\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Programming\Projects\QuickCart\.venv\Lib\site-packages\starlette\routing.py", line 699, in lifespan
+    await receive()
+  File "d:\Programming\Projects\QuickCart\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nicea\AppData\Local\Programs\Python\Python313\Lib\asyncio\queues.py", line 186, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+[2025-07-04 10:09:59] uvicorn.error:83 INFO    - Started server process [18768]
+[2025-07-04 10:09:59] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:09:59] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:10:05] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:10:05] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:10:05] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:10:05] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:10:05] uvicorn.error:93 INFO    - Finished server process [18768]
+[2025-07-04 10:10:06] uvicorn.error:83 INFO    - Started server process [27584]
+[2025-07-04 10:10:06] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:10:06] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:10:07] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:10:07] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:10:07] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:10:07] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:10:07] uvicorn.error:93 INFO    - Finished server process [27584]
+[2025-07-04 10:10:08] uvicorn.error:83 INFO    - Started server process [2820]
+[2025-07-04 10:10:08] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:10:08] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:10:19] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:10:19] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:10:19] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:10:19] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:10:19] uvicorn.error:93 INFO    - Finished server process [2820]
+[2025-07-04 10:10:20] uvicorn.error:83 INFO    - Started server process [20376]
+[2025-07-04 10:10:20] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:10:20] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:10:20] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:10:20] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:10:20] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:10:20] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:10:20] uvicorn.error:93 INFO    - Finished server process [20376]
+[2025-07-04 10:10:22] uvicorn.error:83 INFO    - Started server process [6204]
+[2025-07-04 10:10:22] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:10:22] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:10:23] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:10:23] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:10:23] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:10:23] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:10:23] uvicorn.error:93 INFO    - Finished server process [6204]
+[2025-07-04 10:10:24] uvicorn.error:83 INFO    - Started server process [6312]
+[2025-07-04 10:10:24] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:10:24] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:10:24] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:10:24] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:10:24] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:10:24] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:10:24] uvicorn.error:93 INFO    - Finished server process [6312]
+[2025-07-04 10:10:26] uvicorn.error:83 INFO    - Started server process [18948]
+[2025-07-04 10:10:26] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:10:26] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:10:29] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:10:29] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:10:29] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:10:29] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:10:29] uvicorn.error:93 INFO    - Finished server process [18948]
+[2025-07-04 10:10:30] uvicorn.error:83 INFO    - Started server process [3532]
+[2025-07-04 10:10:30] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:10:30] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:10:39] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:10:39] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:10:40] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:10:40] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:10:40] uvicorn.error:93 INFO    - Finished server process [3532]
+[2025-07-04 10:10:41] uvicorn.error:83 INFO    - Started server process [10472]
+[2025-07-04 10:10:41] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:10:41] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:10:41] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:10:41] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:10:41] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:10:41] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:10:41] uvicorn.error:93 INFO    - Finished server process [10472]
+[2025-07-04 10:10:42] uvicorn.error:83 INFO    - Started server process [27248]
+[2025-07-04 10:10:42] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:10:42] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:10:50] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:10:50] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:10:50] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:10:50] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:10:50] uvicorn.error:93 INFO    - Finished server process [27248]
+[2025-07-04 10:10:52] uvicorn.error:83 INFO    - Started server process [17292]
+[2025-07-04 10:10:52] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:10:52] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:10:58] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:10:58] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:10:58] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:10:58] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:10:58] uvicorn.error:93 INFO    - Finished server process [17292]
+[2025-07-04 10:10:59] uvicorn.error:83 INFO    - Started server process [176]
+[2025-07-04 10:10:59] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:10:59] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:10:59] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:10:59] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:11:00] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:11:00] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:11:00] uvicorn.error:93 INFO    - Finished server process [176]
+[2025-07-04 10:11:01] uvicorn.error:83 INFO    - Started server process [17920]
+[2025-07-04 10:11:01] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:11:01] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:11:07] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:11:07] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:11:07] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:11:07] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:11:07] uvicorn.error:93 INFO    - Finished server process [17920]
+[2025-07-04 10:11:08] uvicorn.error:83 INFO    - Started server process [5964]
+[2025-07-04 10:11:08] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:11:08] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:11:10] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:11:10] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:11:10] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:11:10] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:11:10] uvicorn.error:93 INFO    - Finished server process [5964]
+[2025-07-04 10:11:11] uvicorn.error:83 INFO    - Started server process [12804]
+[2025-07-04 10:11:11] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:11:11] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:11:18] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_product_model.py'. Reloading...
+[2025-07-04 10:11:18] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:11:18] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:11:18] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:11:18] uvicorn.error:93 INFO    - Finished server process [12804]
+[2025-07-04 10:11:19] uvicorn.error:83 INFO    - Started server process [1588]
+[2025-07-04 10:11:19] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:11:19] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:11:22] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_product_model.py'. Reloading...
+[2025-07-04 10:11:22] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:11:22] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:11:22] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:11:22] uvicorn.error:93 INFO    - Finished server process [1588]
+[2025-07-04 10:11:23] uvicorn.error:83 INFO    - Started server process [21072]
+[2025-07-04 10:11:23] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:11:23] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:11:26] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_product_model.py'. Reloading...
+[2025-07-04 10:11:26] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:11:27] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:11:27] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:11:27] uvicorn.error:93 INFO    - Finished server process [21072]
+[2025-07-04 10:11:28] uvicorn.error:83 INFO    - Started server process [8200]
+[2025-07-04 10:11:28] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:11:28] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:11:30] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_product_model.py'. Reloading...
+[2025-07-04 10:11:31] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:11:31] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:11:31] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:11:31] uvicorn.error:93 INFO    - Finished server process [8200]
+[2025-07-04 10:11:32] uvicorn.error:83 INFO    - Started server process [12876]
+[2025-07-04 10:11:32] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:11:32] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:11:40] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_product_model.py'. Reloading...
+[2025-07-04 10:11:40] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:11:40] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:11:40] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:11:40] uvicorn.error:93 INFO    - Finished server process [12876]
+[2025-07-04 10:11:42] uvicorn.error:83 INFO    - Started server process [25008]
+[2025-07-04 10:11:42] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:11:42] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:11:46] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:11:46] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:11:46] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:11:46] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:11:46] uvicorn.error:93 INFO    - Finished server process [25008]
+[2025-07-04 10:11:47] uvicorn.error:83 INFO    - Started server process [10900]
+[2025-07-04 10:11:47] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:11:47] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:11:51] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:11:52] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:11:52] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:11:52] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:11:52] uvicorn.error:93 INFO    - Finished server process [10900]
+[2025-07-04 10:11:53] uvicorn.error:83 INFO    - Started server process [11304]
+[2025-07-04 10:11:53] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:11:53] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:12:00] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:12:00] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:12:00] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:12:00] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:12:00] uvicorn.error:93 INFO    - Finished server process [11304]
+[2025-07-04 10:12:01] uvicorn.error:83 INFO    - Started server process [6128]
+[2025-07-04 10:12:01] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:12:01] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:12:12] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_model.py'. Reloading...
+[2025-07-04 10:12:12] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:12:12] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:12:12] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:12:12] uvicorn.error:93 INFO    - Finished server process [6128]
+[2025-07-04 10:12:13] uvicorn.error:83 INFO    - Started server process [26496]
+[2025-07-04 10:12:13] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:12:13] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:12:21] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_model.py'. Reloading...
+[2025-07-04 10:12:21] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:12:21] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:12:21] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:12:21] uvicorn.error:93 INFO    - Finished server process [26496]
+[2025-07-04 10:12:22] uvicorn.error:83 INFO    - Started server process [19072]
+[2025-07-04 10:12:22] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:12:22] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:12:25] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_model.py'. Reloading...
+[2025-07-04 10:12:25] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:12:25] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:12:25] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:12:25] uvicorn.error:93 INFO    - Finished server process [19072]
+[2025-07-04 10:12:27] uvicorn.error:83 INFO    - Started server process [18224]
+[2025-07-04 10:12:27] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:12:27] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:12:28] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_model.py'. Reloading...
+[2025-07-04 10:12:28] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:12:28] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:12:28] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:12:28] uvicorn.error:93 INFO    - Finished server process [18224]
+[2025-07-04 10:12:29] uvicorn.error:83 INFO    - Started server process [12204]
+[2025-07-04 10:12:29] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:12:29] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:12:38] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_model.py'. Reloading...
+[2025-07-04 10:12:38] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:12:39] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:12:39] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:12:39] uvicorn.error:93 INFO    - Finished server process [12204]
+[2025-07-04 10:12:40] uvicorn.error:83 INFO    - Started server process [14528]
+[2025-07-04 10:12:40] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:12:40] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:12:43] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_model.py'. Reloading...
+[2025-07-04 10:12:43] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:12:44] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:12:44] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:12:44] uvicorn.error:93 INFO    - Finished server process [14528]
+[2025-07-04 10:12:45] uvicorn.error:83 INFO    - Started server process [10904]
+[2025-07-04 10:12:45] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:12:45] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:12:45] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_model.py'. Reloading...
+[2025-07-04 10:12:46] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:12:46] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:12:46] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:12:46] uvicorn.error:93 INFO    - Finished server process [10904]
+[2025-07-04 10:12:47] uvicorn.error:83 INFO    - Started server process [22048]
+[2025-07-04 10:12:47] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:12:47] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:12:57] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\review_model.py'. Reloading...
+[2025-07-04 10:12:58] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:12:58] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:12:58] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:12:58] uvicorn.error:93 INFO    - Finished server process [22048]
+[2025-07-04 10:12:59] uvicorn.error:83 INFO    - Started server process [17236]
+[2025-07-04 10:12:59] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:12:59] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:13:05] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:13:05] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:13:05] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:13:05] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:13:05] uvicorn.error:93 INFO    - Finished server process [17236]
+[2025-07-04 10:13:06] uvicorn.error:83 INFO    - Started server process [10988]
+[2025-07-04 10:13:06] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:13:06] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:13:08] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:13:08] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:13:08] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:13:08] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:13:08] uvicorn.error:93 INFO    - Finished server process [10988]
+[2025-07-04 10:13:09] uvicorn.error:83 INFO    - Started server process [6856]
+[2025-07-04 10:13:09] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:13:09] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:13:15] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:13:15] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:13:15] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:13:15] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:13:15] uvicorn.error:93 INFO    - Finished server process [6856]
+[2025-07-04 10:13:17] uvicorn.error:83 INFO    - Started server process [20468]
+[2025-07-04 10:13:17] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:13:17] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:13:26] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:13:26] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:13:26] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:13:26] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:13:26] uvicorn.error:93 INFO    - Finished server process [20468]
+[2025-07-04 10:13:27] uvicorn.error:83 INFO    - Started server process [12608]
+[2025-07-04 10:13:27] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:13:27] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:13:40] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:13:40] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:13:40] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:13:40] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:13:40] uvicorn.error:93 INFO    - Finished server process [12608]
+[2025-07-04 10:13:41] uvicorn.error:83 INFO    - Started server process [14628]
+[2025-07-04 10:13:41] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:13:41] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:13:58] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:13:58] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:13:58] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:13:58] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:13:58] uvicorn.error:93 INFO    - Finished server process [14628]
+[2025-07-04 10:13:59] uvicorn.error:83 INFO    - Started server process [17532]
+[2025-07-04 10:13:59] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:13:59] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:14:02] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:14:02] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:14:02] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:14:02] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:14:02] uvicorn.error:93 INFO    - Finished server process [17532]
+[2025-07-04 10:14:03] uvicorn.error:83 INFO    - Started server process [18616]
+[2025-07-04 10:14:03] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:14:03] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:14:10] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:14:10] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:14:10] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:14:10] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:14:10] uvicorn.error:93 INFO    - Finished server process [18616]
+[2025-07-04 10:14:11] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:14:11] uvicorn.error:83 INFO    - Started server process [15104]
+[2025-07-04 10:14:11] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:14:11] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:14:11] uvicorn.error:134 ERROR   - Traceback (most recent call last):
+  File "C:\Users\nicea\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\nicea\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 721, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nicea\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\nicea\AppData\Local\Programs\Python\Python313\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Programming\Projects\QuickCart\.venv\Lib\site-packages\starlette\routing.py", line 699, in lifespan
+    await receive()
+  File "d:\Programming\Projects\QuickCart\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nicea\AppData\Local\Programs\Python\Python313\Lib\asyncio\queues.py", line 186, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+[2025-07-04 10:14:12] uvicorn.error:83 INFO    - Started server process [6436]
+[2025-07-04 10:14:12] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:14:12] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:14:13] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:14:13] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:14:13] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:14:13] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:14:13] uvicorn.error:93 INFO    - Finished server process [6436]
+[2025-07-04 10:14:14] uvicorn.error:83 INFO    - Started server process [7984]
+[2025-07-04 10:14:14] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:14:14] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:14:16] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:14:16] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:14:17] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:14:17] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:14:17] uvicorn.error:93 INFO    - Finished server process [7984]
+[2025-07-04 10:14:18] uvicorn.error:83 INFO    - Started server process [25296]
+[2025-07-04 10:14:18] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:14:18] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:14:22] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:14:22] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:14:22] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:14:22] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:14:22] uvicorn.error:93 INFO    - Finished server process [25296]
+[2025-07-04 10:14:23] uvicorn.error:83 INFO    - Started server process [3784]
+[2025-07-04 10:14:23] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:14:23] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:14:31] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:14:31] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:14:31] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:14:31] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:14:31] uvicorn.error:93 INFO    - Finished server process [3784]
+[2025-07-04 10:14:32] uvicorn.error:83 INFO    - Started server process [23772]
+[2025-07-04 10:14:32] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:14:32] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:14:36] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:14:37] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:14:37] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:14:37] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:14:37] uvicorn.error:93 INFO    - Finished server process [23772]
+[2025-07-04 10:14:38] uvicorn.error:83 INFO    - Started server process [13528]
+[2025-07-04 10:14:38] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:14:38] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:14:42] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:14:42] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:14:42] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:14:42] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:14:42] uvicorn.error:93 INFO    - Finished server process [13528]
+[2025-07-04 10:14:43] uvicorn.error:83 INFO    - Started server process [17024]
+[2025-07-04 10:14:43] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:14:43] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:14:45] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:14:45] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:14:45] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:14:45] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:14:45] uvicorn.error:93 INFO    - Finished server process [17024]
+[2025-07-04 10:14:46] uvicorn.error:83 INFO    - Started server process [18928]
+[2025-07-04 10:14:46] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:14:46] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:14:48] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:14:48] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:14:48] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:14:48] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:14:48] uvicorn.error:93 INFO    - Finished server process [18928]
+[2025-07-04 10:14:49] uvicorn.error:83 INFO    - Started server process [20580]
+[2025-07-04 10:14:49] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:14:49] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:14:53] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:14:54] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:14:54] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:14:54] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:14:54] uvicorn.error:93 INFO    - Finished server process [20580]
+[2025-07-04 10:14:55] uvicorn.error:83 INFO    - Started server process [10904]
+[2025-07-04 10:14:55] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:14:55] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:14:59] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:14:59] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:14:59] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:14:59] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:14:59] uvicorn.error:93 INFO    - Finished server process [10904]
+[2025-07-04 10:15:00] uvicorn.error:83 INFO    - Started server process [8380]
+[2025-07-04 10:15:00] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:15:00] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:15:10] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:15:10] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:15:10] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:15:10] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:15:10] uvicorn.error:93 INFO    - Finished server process [8380]
+[2025-07-04 10:15:12] uvicorn.error:83 INFO    - Started server process [15376]
+[2025-07-04 10:15:12] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:15:12] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:15:13] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:15:13] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:15:14] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:15:14] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:15:14] uvicorn.error:93 INFO    - Finished server process [15376]
+[2025-07-04 10:15:15] uvicorn.error:83 INFO    - Started server process [5756]
+[2025-07-04 10:15:15] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:15:15] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:15:26] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:15:26] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:15:26] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:15:26] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:15:26] uvicorn.error:93 INFO    - Finished server process [5756]
+[2025-07-04 10:15:27] uvicorn.error:83 INFO    - Started server process [16620]
+[2025-07-04 10:15:27] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:15:27] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:15:28] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:15:28] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:15:28] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:15:28] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:15:28] uvicorn.error:93 INFO    - Finished server process [16620]
+[2025-07-04 10:15:29] uvicorn.error:83 INFO    - Started server process [26596]
+[2025-07-04 10:15:29] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:15:29] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:15:30] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:15:30] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:15:30] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:15:30] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:15:30] uvicorn.error:93 INFO    - Finished server process [26596]
+[2025-07-04 10:15:31] uvicorn.error:83 INFO    - Started server process [14676]
+[2025-07-04 10:15:31] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:15:31] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:15:32] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:15:32] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:15:32] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:15:32] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:15:32] uvicorn.error:93 INFO    - Finished server process [14676]
+[2025-07-04 10:15:33] uvicorn.error:83 INFO    - Started server process [23976]
+[2025-07-04 10:15:33] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:15:33] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:15:34] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:15:34] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:15:34] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:15:34] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:15:34] uvicorn.error:93 INFO    - Finished server process [23976]
+[2025-07-04 10:15:35] uvicorn.error:83 INFO    - Started server process [19876]
+[2025-07-04 10:15:35] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:15:35] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:15:36] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:15:36] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:15:37] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:15:37] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:15:37] uvicorn.error:93 INFO    - Finished server process [19876]
+[2025-07-04 10:15:38] uvicorn.error:83 INFO    - Started server process [24944]
+[2025-07-04 10:15:38] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:15:38] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:15:38] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:15:38] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:15:38] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:15:38] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:15:38] uvicorn.error:93 INFO    - Finished server process [24944]
+[2025-07-04 10:15:39] uvicorn.error:83 INFO    - Started server process [10692]
+[2025-07-04 10:15:39] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:15:39] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:15:40] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py'. Reloading...
+[2025-07-04 10:15:40] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:15:40] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:15:40] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:15:40] uvicorn.error:93 INFO    - Finished server process [10692]
+[2025-07-04 10:15:41] uvicorn.error:83 INFO    - Started server process [20852]
+[2025-07-04 10:15:41] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:15:41] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:36:11] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:36:11] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:36:11] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:36:11] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:36:11] uvicorn.error:93 INFO    - Finished server process [20852]
+[2025-07-04 10:36:14] uvicorn.error:83 INFO    - Started server process [12548]
+[2025-07-04 10:36:14] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:36:14] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:36:14] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:36:14] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:36:14] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:36:14] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:36:14] uvicorn.error:93 INFO    - Finished server process [12548]
+[2025-07-04 10:36:15] uvicorn.error:83 INFO    - Started server process [26256]
+[2025-07-04 10:36:15] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:36:15] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:36:16] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\user_model.py'. Reloading...
+[2025-07-04 10:36:16] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:36:16] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:36:16] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:36:16] uvicorn.error:93 INFO    - Finished server process [26256]
+[2025-07-04 10:36:17] uvicorn.error:83 INFO    - Started server process [22200]
+[2025-07-04 10:36:17] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:36:17] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:36:22] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:36:22] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:36:22] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:36:22] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:36:22] uvicorn.error:93 INFO    - Finished server process [22200]
+[2025-07-04 10:36:23] uvicorn.error:83 INFO    - Started server process [1692]
+[2025-07-04 10:36:23] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:36:23] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:36:24] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:36:24] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:36:24] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:36:24] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:36:24] uvicorn.error:93 INFO    - Finished server process [1692]
+[2025-07-04 10:36:25] uvicorn.error:83 INFO    - Started server process [20596]
+[2025-07-04 10:36:25] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:36:25] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:36:26] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:36:26] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:36:26] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:36:26] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:36:26] uvicorn.error:93 INFO    - Finished server process [20596]
+[2025-07-04 10:36:27] uvicorn.error:83 INFO    - Started server process [20044]
+[2025-07-04 10:36:27] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:36:27] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:36:28] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:36:28] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:36:28] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:36:28] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:36:28] uvicorn.error:93 INFO    - Finished server process [20044]
+[2025-07-04 10:36:29] uvicorn.error:83 INFO    - Started server process [26780]
+[2025-07-04 10:36:29] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:36:29] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:36:29] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\product_model.py'. Reloading...
+[2025-07-04 10:36:29] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:36:29] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:36:29] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:36:29] uvicorn.error:93 INFO    - Finished server process [26780]
+[2025-07-04 10:36:31] uvicorn.error:83 INFO    - Started server process [8824]
+[2025-07-04 10:36:31] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:36:31] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:36:35] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_model.py'. Reloading...
+[2025-07-04 10:36:35] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:36:35] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:36:35] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:36:35] uvicorn.error:93 INFO    - Finished server process [8824]
+[2025-07-04 10:36:36] uvicorn.error:83 INFO    - Started server process [15924]
+[2025-07-04 10:36:36] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:36:36] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:36:42] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_model.py'. Reloading...
+[2025-07-04 10:36:42] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:36:42] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:36:42] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:36:42] uvicorn.error:93 INFO    - Finished server process [15924]
+[2025-07-04 10:36:43] uvicorn.error:83 INFO    - Started server process [25196]
+[2025-07-04 10:36:43] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:36:43] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:36:44] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_model.py'. Reloading...
+[2025-07-04 10:36:45] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:36:45] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:36:45] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:36:45] uvicorn.error:93 INFO    - Finished server process [25196]
+[2025-07-04 10:36:46] uvicorn.error:83 INFO    - Started server process [5204]
+[2025-07-04 10:36:46] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:36:46] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:36:49] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\review_model.py'. Reloading...
+[2025-07-04 10:36:49] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:36:50] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:36:50] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:36:50] uvicorn.error:93 INFO    - Finished server process [5204]
+[2025-07-04 10:36:51] uvicorn.error:83 INFO    - Started server process [11808]
+[2025-07-04 10:36:51] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:36:51] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:36:52] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\review_model.py'. Reloading...
+[2025-07-04 10:36:52] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:36:52] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:36:52] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:36:52] uvicorn.error:93 INFO    - Finished server process [11808]
+[2025-07-04 10:36:54] uvicorn.error:83 INFO    - Started server process [7112]
+[2025-07-04 10:36:54] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:36:54] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:36:54] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\review_model.py'. Reloading...
+[2025-07-04 10:36:54] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:36:54] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:36:54] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:36:54] uvicorn.error:93 INFO    - Finished server process [7112]
+[2025-07-04 10:36:55] uvicorn.error:83 INFO    - Started server process [10972]
+[2025-07-04 10:36:55] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:36:55] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:36:55] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\review_model.py'. Reloading...
+[2025-07-04 10:36:55] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:36:55] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:36:55] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:36:55] uvicorn.error:93 INFO    - Finished server process [10972]
+[2025-07-04 10:36:56] uvicorn.error:83 INFO    - Started server process [11920]
+[2025-07-04 10:36:56] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:36:56] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:36:59] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:36:59] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:36:59] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:36:59] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:36:59] uvicorn.error:93 INFO    - Finished server process [11920]
+[2025-07-04 10:37:00] uvicorn.error:83 INFO    - Started server process [25012]
+[2025-07-04 10:37:00] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:37:00] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:37:02] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:37:02] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:37:02] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:37:02] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:37:02] uvicorn.error:93 INFO    - Finished server process [25012]
+[2025-07-04 10:37:03] uvicorn.error:83 INFO    - Started server process [10784]
+[2025-07-04 10:37:03] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:37:03] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:37:03] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:37:03] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:37:03] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:37:03] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:37:03] uvicorn.error:93 INFO    - Finished server process [10784]
+[2025-07-04 10:37:04] uvicorn.error:83 INFO    - Started server process [17228]
+[2025-07-04 10:37:04] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:37:04] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:37:04] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\payment_model.py'. Reloading...
+[2025-07-04 10:37:04] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:37:05] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:37:05] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:37:05] uvicorn.error:93 INFO    - Finished server process [17228]
+[2025-07-04 10:37:06] uvicorn.error:83 INFO    - Started server process [19800]
+[2025-07-04 10:37:06] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:37:06] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:40:42] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\__init.py', 'models\__init__.py'. Reloading...
+[2025-07-04 10:40:42] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:40:42] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:40:42] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:40:42] uvicorn.error:93 INFO    - Finished server process [19800]
+[2025-07-04 10:41:36] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_model.py'. Reloading...
+[2025-07-04 10:41:37] uvicorn.error:83 INFO    - Started server process [14576]
+[2025-07-04 10:41:37] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:41:37] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:41:39] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\order_model.py'. Reloading...
+[2025-07-04 10:41:39] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:41:39] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:41:39] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:41:39] uvicorn.error:93 INFO    - Finished server process [14576]
+[2025-07-04 10:41:40] uvicorn.error:83 INFO    - Started server process [23540]
+[2025-07-04 10:41:40] uvicorn.error:48 INFO    - Waiting for application startup.
+[2025-07-04 10:41:40] uvicorn.error:62 INFO    - Application startup complete.
+[2025-07-04 10:42:45] uvicorn.error:55 WARNING - WatchFiles detected changes in 'models\orm_model.py'. Reloading...
+[2025-07-04 10:42:45] uvicorn.error:263 INFO    - Shutting down
+[2025-07-04 10:42:45] uvicorn.error:67 INFO    - Waiting for application shutdown.
+[2025-07-04 10:42:45] uvicorn.error:76 INFO    - Application shutdown complete.
+[2025-07-04 10:42:45] uvicorn.error:93 INFO    - Finished server process [23540]
