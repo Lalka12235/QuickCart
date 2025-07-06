@@ -1,7 +1,7 @@
 from sqlalchemy import select,insert,update,delete,and_,func
 from app.config.session import Session
 from app.schemas.order_schema import OrderSchema
-from app.models.orm_model import OrderModel, order_product_association
+from app.models.order_model import OrderModel, order_product_association
 import uuid
 
 

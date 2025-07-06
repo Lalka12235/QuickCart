@@ -27,12 +27,12 @@ services:
     container_name: shop-api
     env_file:
       - .env
-    #environment:
-    #  APP_CONFIG_DB_URL: postgresql+psycopg://user:password@postgres:5432/quick
-    networks:
-      - netapi
     ports:
       - "8000:8000"
+    environment:
+      APP_CONFIG_DB_URL: postgresql+psycopg://user:password@postgres:5432/quick
+    networks:
+      - netapi
     depends_on:
       - postgres
     

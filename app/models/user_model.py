@@ -7,7 +7,6 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from app.models.order_model import OrderModel
     from app.models.review_model import ReviewModel
-    from app.models.payment_model import PaymentModel
 
 
 
@@ -21,4 +20,3 @@ class UserModel(Base):
 
     orders: Mapped[list['OrderModel']] = relationship(back_populates='user')
     reviews: Mapped[list['ReviewModel']] = relationship(back_populates='user')
-    payments: Mapped[list['PaymentModel']] = relationship('PaymentModel', back_populates='user')

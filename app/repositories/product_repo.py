@@ -1,6 +1,6 @@
 from sqlalchemy import select,update,delete,func
 from app.config.session import Session
-from app.models.orm_model import ProductModel
+from app.models.product_model import ProductModel
 from app.schemas.product_schema import ProductSchema
 from typing import Any
 

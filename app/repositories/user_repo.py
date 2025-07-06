@@ -1,6 +1,6 @@
 from sqlalchemy import select, delete,and_
 from app.config.session import Session
-from app.models.orm_model import UserModel
+from app.models.user_model import UserModel
 from app.utils.hash import make_hash_pass,verify_pass
 
 class UserRepository:

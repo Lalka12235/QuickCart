@@ -1,6 +1,6 @@
 from sqlalchemy import select,update,delete,func
 from app.config.session import Session
-from app.models.orm_model import ReviewModel
+from app.models.review_model import ReviewModel
 from app.schemas.review_schema import ReviewsSchema, UpdateReviewSchema
 import uuid
 

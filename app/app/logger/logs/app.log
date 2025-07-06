@@ -1119,3 +1119,4 @@ asyncio.exceptions.CancelledError
 [2025-07-04 10:42:45] uvicorn.error:67 INFO    - Waiting for application shutdown.
 [2025-07-04 10:42:45] uvicorn.error:76 INFO    - Application shutdown complete.
 [2025-07-04 10:42:45] uvicorn.error:93 INFO    - Finished server process [23540]
+[2025-07-04 11:02:11] uvicorn.error:55 WARNING - WatchFiles detected changes in 'repositories\user_repo.py'. Reloading...
