@@ -7,4 +7,11 @@ engine = create_engine(
     echo=False,#True для отладки
 )
 
-Session = sessionmaker(bind=engine)
+SessionLocal = sessionmaker(bind=engine)
+
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()

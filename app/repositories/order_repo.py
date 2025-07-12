@@ -1,43 +1,40 @@
 from sqlalchemy import select,insert,update,delete,and_,func
-from app.config.session import Session
 from app.schemas.order_schema import OrderSchema
 from app.models.order_model import OrderModel, order_product_association
 import uuid
+from sqlalchemy.orm import Session
 
 
 class OrderRepository:
 
     @staticmethod
-    def get_order_by_id(order_id: int, user_id: uuid.UUID) -> OrderModel | None:
-        with Session() as session:
-            stmt = select(OrderModel).where(
-                OrderModel.id == order_id,
-                OrderModel.user_id == user_id
-            )
-            result = session.execute(stmt)
-            return result.scalar_one_or_none()
+    def get_order_by_id(db: Session,order_id: int, user_id: uuid.UUID) -> OrderModel | None:
+        stmt = select(OrderModel).where(
+            OrderModel.id == order_id,
+            OrderModel.user_id == user_id
+        )
+        result = db.execute(stmt)
+        return result.scalar_one_or_none()
 
 
     @staticmethod
-    def get_all_order_by_user_id(user_id: int) -> OrderModel:
-        with Session() as session:
+    def get_all_order_by_user_id(db: Session,user_id: int) -> OrderModel:
             stmt = select(OrderModel).where(OrderModel.user_id == user_id)
-            result = session.execute(stmt)
+            result = db.execute(stmt)
             return result.scalars().all()
         
     
     @staticmethod
-    def add_order(order_data: OrderSchema, 
+    def add_order(db: Session,order_data: OrderSchema, 
                   user_id: uuid.UUID,
     ) -> OrderModel:
-        with Session() as session:
             # 1. Создаём заказ
             new_order = OrderModel(
                 address=order_data.address,
                 user_id=user_id,
             )
-            session.add(new_order)
-            session.flush()  # чтобы получить new_order.id до коммита
+            db.add(new_order)
+            db.flush()  # чтобы получить new_order.id до коммита
 
             #2. Добавляем записи в ассоциативную таблицу order_products
             #stmt = insert(order_product_association).values(
@@ -45,57 +42,53 @@ class OrderRepository:
             #    product_id=product_id,
             #    quantity=quantity
             #)
-            #session.execute(stmt)
+            #db.execute(stmt)
             #3. Фиксируем транзакцию
-            session.commit()
+            db.commit()
             # 4. Обновляем объект заказа
-            session.refresh(new_order)
+            db.refresh(new_order)
             return new_order
         
     @staticmethod
-    def add_product_to_order(order_id: int, product_id: int, quantity: int):
-        with Session() as session:
-            stmt = insert(order_product_association).values(
-                order_id=order_id,
-                product_id=product_id,
-                quantity=quantity
-            )
-            session.execute(stmt)
-            session.commit()
+    def add_product_to_order(db: Session,order_id: int, product_id: int, quantity: int):
+         stmt = insert(order_product_association).values(
+             order_id=order_id,
+             product_id=product_id,
+             quantity=quantity
+         )
+         db.execute(stmt)
+         db.commit()
 
 
     @staticmethod
-    def update_order_delivery_status(order_id: int, user_id: uuid.UUID, delivered: bool) -> bool:
-        with Session() as session:
-            stmt = update(OrderModel).where(
-                OrderModel.id == order_id,
-                OrderModel.user_id == user_id
-            ).values(delivered=delivered)
-            result = session.execute(stmt)
-            session.commit()
-            return result.rowcount > 0
+    def update_order_delivery_status(db: Session,order_id: int, user_id: uuid.UUID, delivered: bool) -> bool:
+        stmt = update(OrderModel).where(
+            OrderModel.id == order_id,
+            OrderModel.user_id == user_id
+        ).values(delivered=delivered)
+        result = db.execute(stmt)
+        db.commit()
+        return result.rowcount > 0
         
     staticmethod
-    def cancel_order(order_id: int, user_id: uuid.UUID) -> bool:
-        with Session() as session:
-            stmt = delete(order_product_association).where(
-                order_product_association.c.order_id == order_id,
+    def cancel_order(db: Session,order_id: int, user_id: uuid.UUID) -> bool:
+        stmt = delete(order_product_association).where(
+            order_product_association.c.order_id == order_id,
+        )
+        db.execute(stmt)
+        stmt = delete(OrderModel).where(
+            and_(
+                OrderModel.id == order_id,
+                OrderModel.user_id == user_id
             )
-            session.execute(stmt)
-            stmt = delete(OrderModel).where(
-                and_(
-                    OrderModel.id == order_id,
-                    OrderModel.user_id == user_id
-                )
-            )
-            session.execute(stmt)
+        )
+        db.execute(stmt)
 
-            session.commit()
-            return True
+        db.commit()
+        return True
         
     @staticmethod
-    def count_orders(user_id: uuid.UUID) -> int:
-        with Session() as session:
-            stmt = select(func.count(OrderModel.id)).where(OrderModel.user_id == user_id)
-            result = session.execute(stmt)
-            return result.scalar_one()
+    def count_orders(db: Session,user_id: uuid.UUID) -> int:
+        stmt = select(func.count(OrderModel.id)).where(OrderModel.user_id == user_id)
+        result = db.execute(stmt)
+        return result.scalar_one()
