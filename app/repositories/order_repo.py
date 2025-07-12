@@ -2,7 +2,7 @@ from sqlalchemy import select,insert,update,delete,and_,func
 from app.schemas.order_schema import OrderSchema
 from app.models.order_model import OrderModel, order_product_association
 import uuid
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Sessio
 
 
 class OrderRepository:
