@@ -3,13 +3,14 @@ from app.repositories.user_repo import UserRepository
 from app.schemas.user_schema import UserCreateSchema,UserDeleteSchema
 from typing import Any
 from app.utils.hash import verify_pass
+from sqlalchemy.orm import Session
 
 
 class UserService:
 
     @staticmethod
-    def create_user(user: UserCreateSchema) -> dict[str,Any]:
-        exist_user = UserRepository.get_user_by_email(user.email)
+    def create_user(db: Session,user: UserCreateSchema) -> dict[str,Any]:
+        exist_user = UserRepository.get_user_by_email(db,user.email)
 
         if exist_user:
             raise HTTPException(
@@ -17,7 +18,7 @@ class UserService:
                 detail='User exist'
             )
         
-        result = UserRepository.create_user(user.email,user.username,user.password)
+        result = UserRepository.create_user(db,user.email,user.username,user.password)
 
         return {
         "success": True,
@@ -32,8 +33,8 @@ class UserService:
     
 
     @staticmethod
-    def delete_user(user: UserDeleteSchema) -> dict[str,Any]:
-        exist_user = UserRepository.get_user_by_email(user.email)
+    def delete_user(db: Session,user: UserDeleteSchema) -> dict[str,Any]:
+        exist_user = UserRepository.get_user_by_email(db,user.email)
 
         if not exist_user:
             raise HTTPException(
@@ -49,7 +50,7 @@ class UserService:
             )
 
 
-        result = UserRepository.delete_user(user.email)
+        result = UserRepository.delete_user(db,user.email)
 
         return {
         "success": True,
@@ -58,8 +59,8 @@ class UserService:
     
 
     @staticmethod
-    def get_user_by_email(email: str) -> dict[str,Any]:
-        user = UserRepository.get_user_by_email(email)
+    def get_user_by_email(db: Session,email: str) -> dict[str,Any]:
+        user = UserRepository.get_user_by_email(db,email)
 
         if not user:
             raise HTTPException(
