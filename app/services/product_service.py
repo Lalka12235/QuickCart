@@ -2,12 +2,13 @@ from fastapi import HTTPException,status
 from app.repositories.product_repo import ProductRepository
 from app.schemas.product_schema import ProductSchema,UpdateProductSchema
 from typing import Any
+from sqlalchemy.orm import Session
 
 class ProductService:
 
     @staticmethod
-    def get_one_product_by_title(title: str) -> dict[str, Any]:
-        product = ProductRepository.get_one_product_by_title(title)
+    def get_one_product_by_title(db: Session,title: str) -> dict[str, Any]:
+        product = ProductRepository.get_one_product_by_title(db,title)
 
         if not product:
             raise HTTPException(
@@ -26,8 +27,8 @@ class ProductService:
     
 
     @staticmethod
-    def get_all_product() -> dict[str, Any]:
-        products  = ProductRepository.get_all_product()
+    def get_all_product(db: Session,) -> dict[str, Any]:
+        products  = ProductRepository.get_all_product(db)
 
         if not products :
             raise HTTPException(
@@ -52,8 +53,8 @@ class ProductService:
     
 
     @staticmethod
-    def add_product(product: ProductSchema) -> dict[str, Any]:
-        product_exist = ProductRepository.get_one_product_by_title(product.title)
+    def add_product(db: Session,product: ProductSchema) -> dict[str, Any]:
+        product_exist = ProductRepository.get_one_product_by_title(db,product.title)
 
         if product_exist:
             raise HTTPException(
@@ -61,7 +62,7 @@ class ProductService:
                 detail='Product with this title already exists'
             )
         
-        new_product = ProductRepository.add_product(product)
+        new_product = ProductRepository.add_product(db,product)
 
         return {
             'status': 'success',
@@ -76,8 +77,8 @@ class ProductService:
     
 
     @staticmethod
-    def update_product(title: str, product_update: UpdateProductSchema) -> dict[str, Any]:
-        product_exist = ProductRepository.get_one_product_by_title(title)
+    def update_product(db: Session,title: str, product_update: UpdateProductSchema) -> dict[str, Any]:
+        product_exist = ProductRepository.get_one_product_by_title(db,title)
 
         if not product_exist:
             raise HTTPException(
@@ -89,14 +90,14 @@ class ProductService:
 
         new_title = update_data.get('title')
         if new_title and new_title != title:
-            conflict_product = ProductRepository.get_one_product_by_title(new_title)
+            conflict_product = ProductRepository.get_one_product_by_title(db,new_title)
             if conflict_product:
                 raise HTTPException(
                     status_code=409,
                     detail='Another product with the new title already exists'
                 )
         
-        updated_product = ProductRepository.update_product(title, update_data)
+        updated_product = ProductRepository.update_product(db,title, update_data)
 
         if not updated_product:
             raise HTTPException(
@@ -117,8 +118,8 @@ class ProductService:
     
 
     @staticmethod
-    def delete_product(title: str) -> dict[str, Any]:
-        exist_product = ProductRepository.get_one_product_by_title(title)
+    def delete_product(db: Session,title: str) -> dict[str, Any]:
+        exist_product = ProductRepository.get_one_product_by_title(db,title)
 
         if not exist_product:
             raise HTTPException(
@@ -126,7 +127,7 @@ class ProductService:
                 detail='Not found product'
             )
         
-        delete_product = ProductRepository.delete_product(title)
+        delete_product = ProductRepository.delete_product(db,title)
 
         return {
             'status': 'success',
@@ -135,12 +136,12 @@ class ProductService:
     
 
     @staticmethod
-    def get_products_paginated(offset: int = 0, limit: int = 10) -> dict[str, Any]:
+    def get_products_paginated(db: Session,offset: int = 0, limit: int = 10) -> dict[str, Any]:
         # 1. Получаем общее количество продуктов в базе
-        total_product = ProductRepository.get_total_products_count()
+        total_product = ProductRepository.get_total_products_count(db)
 
         # 2. Получаем список продуктов с применением offset и limit
-        products = ProductRepository.get_products_paginated(offset=offset, limit=limit)
+        products = ProductRepository.get_products_paginated(db,offset=offset, limit=limit)
 
         # 3. Вычисляем текущую страницу
         # Нумерация страниц обычно начинается с 1, поэтому добавляем 1
@@ -171,8 +172,8 @@ class ProductService:
 
 
     @staticmethod
-    def update_quantity(title: str, delta: int) -> dict[str,Any]:
-        product = ProductRepository.get_one_product_by_title(title)
+    def update_quantity(db: Session,title: str, delta: int) -> dict[str,Any]:
+        product = ProductRepository.get_one_product_by_title(db,title)
 
         if not product:
             raise HTTPException(
@@ -180,7 +181,7 @@ class ProductService:
                 detail='Not found product'
             )
         
-        result = ProductRepository.update_quantity(product.id,delta)
+        result = ProductRepository.update_quantity(db,product.id,delta)
 
         return {
             'status': 'success',
@@ -195,8 +196,8 @@ class ProductService:
 
 
     @staticmethod
-    def get_total_products_count() -> dict[str, Any]:
-        total = ProductRepository.get_total_products_count()
+    def get_total_products_count(db: Session,) -> dict[str, Any]:
+        total = ProductRepository.get_total_products_count(db)
         return {
             "status": "success",
             "total_products": total
