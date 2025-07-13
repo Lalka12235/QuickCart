@@ -5,18 +5,19 @@ from app.services.user_service import UserService
 from app.services.product_service import ProductService
 import uuid
 from typing import Any
+from sqlalchemy.orm import Session
 
 class ReviewService:
 
     @staticmethod
-    def get_review_about_by_user_id(email: str,title: str) -> dict[str,Any]:
-        user = UserService.get_user_by_email(email)
+    def get_review_about_by_user_id(db: Session,email: str,title: str) -> dict[str,Any]:
+        user = UserService.get_user_by_email(db,email)
         user_id = user.id
 
-        product = ProductService.get_one_product_by_title(title)
+        product = ProductService.get_one_product_by_title(db,title)
         product_id = product.id
 
-        review = ReviewRepository.get_review_about_product_by_user_id(user_id,product_id)
+        review = ReviewRepository.get_review_about_product_by_user_id(db,user_id,product_id)
 
         if not review:
             raise HTTPException(
@@ -38,11 +39,11 @@ class ReviewService:
     
 
     @staticmethod
-    def get_all_review_by_user_id(email: str) -> dict[str,Any]:
-        user = UserService.get_user_by_email(email)
+    def get_all_review_by_user_id(db: Session,email: str) -> dict[str,Any]:
+        user = UserService.get_user_by_email(db,email)
         user_id = user.id
 
-        reviews = ReviewRepository.get_all_review_by_user_id(user_id)
+        reviews = ReviewRepository.get_all_review_by_user_id(db,user_id)
 
         if not reviews:
             raise HTTPException(
@@ -65,21 +66,21 @@ class ReviewService:
     
 
     @staticmethod
-    def add_review(review: ReviewsSchema,email: str, title: str) -> dict[str,Any]:
-        user = UserService.get_user_by_email(email)
+    def add_review(db: Session,review: ReviewsSchema,email: str, title: str) -> dict[str,Any]:
+        user = UserService.get_user_by_email(db,email)
         user_id = user.id
 
-        product = ProductService.get_one_product_by_title(title)
+        product = ProductService.get_one_product_by_title(db,title)
         product_id = product.id
 
-        reviews = ReviewRepository.get_review_about_product_by_user_id(user_id,product_id)
+        reviews = ReviewRepository.get_review_about_product_by_user_id(db,user_id,product_id)
         if reviews:
             raise HTTPException(
                 status_code=409,
                 detail='Maybe should delete review or change'
             )
         
-        add_review = ReviewRepository.add_review(review,user_id,product_id)
+        add_review = ReviewRepository.add_review(db,review,user_id,product_id)
 
         return {
             'status': 'found',
@@ -95,14 +96,14 @@ class ReviewService:
     
 
     @staticmethod
-    def update_review(review: UpdateReviewSchema,email: str, title: str) -> dict[str,Any]:
-        user = UserService.get_user_by_email(email)
+    def update_review(db: Session,review: UpdateReviewSchema,email: str, title: str) -> dict[str,Any]:
+        user = UserService.get_user_by_email(db,email)
         user_id = user.id
 
-        product = ProductService.get_one_product_by_title(title)
+        product = ProductService.get_one_product_by_title(db,title)
         product_id = product.id
 
-        reviews = ReviewRepository.get_review_about_product_by_user_id(user_id,product_id)
+        reviews = ReviewRepository.get_review_about_product_by_user_id(db,user_id,product_id)
 
         if not reviews:
             raise HTTPException(
@@ -110,7 +111,7 @@ class ReviewService:
                 detail='Review not found'
             )
         
-        update_review = ReviewRepository.update_review(review,user_id,product_id)
+        update_review = ReviewRepository.update_review(db,review,user_id,product_id)
 
         return {
             'status': 'found',
@@ -118,14 +119,14 @@ class ReviewService:
         }
     
     @staticmethod
-    def delete_review(email: str, title: str) -> dict[str,Any]:
+    def delete_review(db: Session,email: str, title: str) -> dict[str,Any]:
         user = UserService.get_user_by_email(email)
         user_id = user.id
 
-        product = ProductService.get_one_product_by_title(title)
+        product = ProductService.get_one_product_by_title(db,title)
         product_id = product.id
 
-        review = ReviewRepository.get_review_about_product_by_user_id(user_id,product_id)
+        review = ReviewRepository.get_review_about_product_by_user_id(db,user_id,product_id)
 
         if not review:
             raise HTTPException(
@@ -133,7 +134,7 @@ class ReviewService:
                 detail='Review not found'
             )
         
-        delete_review = ReviewRepository.delete_review(user_id,product_id)
+        delete_review = ReviewRepository.delete_review(db,user_id,product_id)
 
         return {
             'status': 'found',
@@ -142,11 +143,11 @@ class ReviewService:
     
 
     @staticmethod
-    def get_all_review_product_by_product_id(title: str) -> dict[str,Any]:
-        product = ProductService.get_one_product_by_title(title)
+    def get_all_review_product_by_product_id(db: Session,title: str) -> dict[str,Any]:
+        product = ProductService.get_one_product_by_title(db,title)
         product_id = product.id
 
-        reviews = ReviewRepository.get_all_review_product_by_product_id(product_id)
+        reviews = ReviewRepository.get_all_review_product_by_product_id(db,product_id)
 
         return {
             'status': 'found',
@@ -162,11 +163,11 @@ class ReviewService:
         }
     
     @staticmethod
-    def count_total_review(title: str) -> dict[str,Any]:
-        product = ProductService.get_one_product_by_title(title)
+    def count_total_review(db: Session,title: str) -> dict[str,Any]:
+        product = ProductService.get_one_product_by_title(db,title)
         product_id = product.id
 
-        total = ReviewRepository.count_total_review(product_id)
+        total = ReviewRepository.count_total_review(db,product_id)
 
         return {
             'status': 'found',
@@ -175,11 +176,11 @@ class ReviewService:
     
 
     @staticmethod
-    def calculating_average_product_rating(title: str) -> dict[str,Any]:
-        product = ProductService.get_one_product_by_title(title)
+    def calculating_average_product_rating(db: Session,title: str) -> dict[str,Any]:
+        product = ProductService.get_one_product_by_title(db,title)
         product_id = product.id
 
-        avg_rating = ReviewRepository.calculating_average_product_rating(product_id)
+        avg_rating = ReviewRepository.calculating_average_product_rating(db,product_id)
 
         return {
             'status': 'found',
@@ -188,14 +189,14 @@ class ReviewService:
     
 
     @staticmethod
-    def pagination_review(title: str, offset: int = 0, limit: int = 10) -> dict[str,Any]:
-        product = ProductService.get_one_product_by_title(title)
+    def pagination_review(db: Session,title: str, offset: int = 0, limit: int = 10) -> dict[str,Any]:
+        product = ProductService.get_one_product_by_title(db,title)
         product_id = product.id
 
-        total_review = ReviewRepository.count_total_review(product_id)
+        total_review = ReviewRepository.count_total_review(db,product_id)
 
         # 2. Получаем список продуктов с применением offset и limit
-        reviews = ReviewRepository.pagination_review(product_id,offset=offset, limit=limit)
+        reviews = ReviewRepository.pagination_review(db,product_id,offset=offset, limit=limit)
 
         # 3. Вычисляем текущую страницу
         # Нумерация страниц обычно начинается с 1, поэтому добавляем 1
