@@ -23,7 +23,7 @@ def get_current_user(token: str = Depends(oauth2_scheme)):
 
 @auth.post('/token')
 async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
-    user = UserService.login_user(form_data.username)
+    user = UserService.get_user_by_email()
 
     if not user:
         raise HTTPException(status_code=400, detail="User not found")
